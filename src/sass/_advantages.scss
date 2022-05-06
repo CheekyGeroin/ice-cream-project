@@ -1,21 +1,7 @@
-//  загальні стилі
+// //  загальні стилі
 .section {
   padding-top: 40px;
   padding-bottom: 40px;
-}
-
-.container {
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-
-  @media screen and (min-width: 768px) {
-    width: 480px;
-  }
-}
-p {
-  margin: 0;
 }
 
 ul {
@@ -31,26 +17,33 @@ img {
 }
 
 // стилі секції
-.advantage__number {
-  display: block;
-  margin-bottom: 15px;
-  font-family: 'Titan One';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 36px;
-  line-height: 1.14;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
+.section--secondBgc {
+  background-color: $secondBackgroundColor;
+}
 
-  color: #d41443;
+.advantage {
+  @media screen and (min-width: $tablet) {
+    margin: -15px;
+    display: flex;
+  }
 }
 
 .advantage__item {
   width: 230px;
+  @media screen and (min-width: $tablet) {
+    margin: 15px;
+    width: 160px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 288px;
+  }
 }
 
 .advantage__item:not(:last-child) {
-  margin-bottom: 32px;
+  @media screen and (max-width: $tablet) {
+    margin-bottom: 30px;
+  }
 }
 
 .advantage__item::before {
@@ -87,12 +80,26 @@ img {
   }
 }
 
+.advantage__number {
+  display: block;
+  margin-bottom: 15px;
+  font-family: $titleFont;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1.14;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: $mainTitleColor;
+}
+
 .advantage__text {
-  font-family: 'DM Sans';
+  font-family: $mainFont;
   font-style: normal;
   font-weight: 700;
   font-size: 12px;
   line-height: 1.7;
 
-  color: #000000;
+  color: $secondTextColor;
 }
