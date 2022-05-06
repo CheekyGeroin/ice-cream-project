@@ -1,0 +1,98 @@
+//  загальні стилі
+.section {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  @media screen and (min-width: 768px) {
+    width: 480px;
+  }
+}
+p {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+// стилі секції
+.advantage__number {
+  display: block;
+  margin-bottom: 15px;
+  font-family: 'Titan One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1.14;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: #d41443;
+}
+
+.advantage__item {
+  width: 230px;
+}
+
+.advantage__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.advantage__item::before {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 50px;
+  margin-bottom: 15px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.advantage__item:nth-child(1):before {
+  background-image: url(../images/advantage/icon1.png);
+
+  @media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url(../images/advantage/icon1@2x.png);
+  }
+}
+
+.advantage__item:nth-child(2):before {
+  background-image: url(../images/advantage/icon2.png);
+
+  @media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url(../images/advantage/icon2@2x.png);
+  }
+}
+
+.advantage__item:nth-child(3):before {
+  background-image: url(../images/advantage/icon3.png);
+
+  @media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url(../images/advantage/icon3@2x.png);
+  }
+}
+
+.advantage__text {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.7;
+
+  color: #000000;
+}
