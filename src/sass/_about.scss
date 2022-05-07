@@ -1,0 +1,117 @@
+.about {
+    @media screen and (max-width: $tablet) {
+        padding-bottom: 0;
+    }
+
+    @media screen and (min-width: $tablet) and (max-width: $desktop - 1px) {
+        padding: 20px;
+    }
+}
+
+.about__title {
+    margin-bottom: 32px;
+
+    @media screen and (min-width: $tablet) {
+        margin-bottom: 40px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        margin-bottom: 60px;
+    }
+}
+
+.about__wrapper {
+    @media screen and (min-width: $tablet) {
+        display: flex;
+    }
+}
+
+.about__img {
+    display: inline-block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+
+    @media screen and (min-width: $tablet) {
+        flex-basis: 50%;
+        margin-right: 16px;
+    }
+
+    @media screen and (max-width: $tablet - 1px) {
+        margin-bottom: 40px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        margin-right: 70px;
+    }
+
+    & img {
+        display: inline-block;
+    }
+}
+
+.about__content {
+    @media screen and (min-width: $tablet) {
+        flex-basis: 50%;
+        margin-left: 16px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        margin-right: 70px;
+    }
+}
+
+.about__text {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 162%;
+    color: $subtitleTextColor;
+    padding-right: 65px;
+
+    &--dark {
+        color: $secondTextColor;
+    }
+
+    & + & {
+        margin-top: 40px;
+        margin-bottom: 20px;
+        padding-right: 78px;
+
+        @media screen and (min-width: $tablet) {
+            padding-right: 25px;
+        }
+
+        @media screen and (min-width: $desktop) {
+            margin-top: 32px;
+            margin-bottom: 40px;
+            padding-right: 130px;
+            font-size: 14px;
+            line-height: 194%;
+        }
+    }
+
+    @media screen and (min-width: $tablet) {
+        padding-right: 10px;
+        font-size: 14px;
+        line-height: 176%;
+    }
+
+    @media screen and (min-width: $desktop) {
+        padding-right: 120px;
+        font-size: 16px;
+        line-height: 176%;
+    }
+}
+
+.about__span {
+    display: block;
+}
+
+.about__button {
+    padding: 12px 40px;
+
+    @media screen and (max-width: $tablet - 1px) {
+        font-size: 14px;
+        line-height: 1.28;
+    }
+}
