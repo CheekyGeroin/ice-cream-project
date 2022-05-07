@@ -1,28 +1,5 @@
-// //  загальні стилі
-.section {
-  padding-top: 40px;
-  padding-bottom: 40px;
-}
-
-ul {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-}
-
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
-// стилі секції
-.section--secondBgc {
-  background-color: $secondBackgroundColor;
-}
-
 .advantage {
-  @media screen and (min-width: $tablet) {
+  @media screen and (min-width: $mobile) {
     margin: -15px;
     display: flex;
   }
@@ -30,7 +7,7 @@ img {
 
 .advantage__item {
   width: 230px;
-  @media screen and (min-width: $tablet) {
+  @media screen and (min-width: $mobile) {
     margin: 15px;
     width: 160px;
   }

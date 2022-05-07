@@ -5,10 +5,13 @@
 
 // Стили для файла с примером HTML-фрагмента
 @import './variables';
+@import './visually_hidden';
 @import './placeholders';
 @import './breakpoints';
+@import './section';
 @import './body';
 @import './container';
+@import './button';
 @import './header';
 @import './hero';
 @import './products';
