@@ -1,0 +1,59 @@
+.section {
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  @media screen and (min-width: $desktop) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+.section--no-padding-top {
+  padding-top: 0;
+}
+
+.section--secondBgc {
+  background-color: $secondBackgroundColor;
+}
+
+.section__label {
+  display: block;
+  font-family: $titleFont;
+  margin-bottom: 15px;
+  text-align: center;
+  color: $secondTitleColor;
+  font-size: 18px;
+  line-height: 1.17;
+  text-transform: uppercase;
+
+  @media screen and (min-width: $tablet) {
+    font-size: 26px;
+    line-height: 1.15;
+  }
+
+  @media screen and (min-width: $desktop) {
+    font-size: 30px;
+    line-height: 1.13;
+    letter-spacing: 0.04em;
+  }
+}
+
+.section__title {
+  text-align: center;
+  color: $mainTitleColor;
+  font-family: $titleFont;
+  font-size: 34px;
+  line-height: 1.15;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  @media screen and (min-width: $tablet) {
+    font-size: 48px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    font-size: 58px;
+    line-height: 1.14;
+    letter-spacing: 0.06em;
+  }
+}

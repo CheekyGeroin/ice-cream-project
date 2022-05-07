@@ -1,0 +1,34 @@
+.button {
+  font-family: $mainFont;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border-radius: 22px;
+  border-color: transparent;
+
+  transition: color $transition, background-color $transition;
+}
+
+.button--light {
+  color: $mainTitleColor;
+  background-color: $mainBackgroundColor;
+
+  &:hover,
+  &:focus {
+    background-color: $accentButtonColor;
+    color: $accentButtonText;
+  }
+}
+
+.button--dark {
+  color: $mainTextColor;
+  background-color: $mainTitleColor;
+
+  &:hover,
+  &:focus {
+    background-color: $accentButtonColor-dark;
+    color: $accentButtonText-dark;
+  }
+}
