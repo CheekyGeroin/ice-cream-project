@@ -1,19 +1,23 @@
 .advantage {
   @media screen and (min-width: $tablet) {
-    margin: -15px;
+    margin: -10px;
     display: flex;
+  }
+  @media screen and (min-width: $desktop) {
+    margin: -60px;
   }
 }
 
 .advantage__item {
-  width: 230px;
+  max-width: 230px;
   @media screen and (min-width: $tablet) {
-    margin: 15px;
-    width: 160px;
+    margin: 10px;
+    max-width: 160px;
   }
 
   @media screen and (min-width: $desktop) {
-    width: 288px;
+    margin: 60px;
+    max-width: 300px;
   }
 }
 
@@ -31,6 +35,14 @@
   margin-bottom: 15px;
   background-repeat: no-repeat;
   background-size: contain;
+
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 35px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 40px;
+  }
 }
 
 .advantage__item:nth-child(1):before {
@@ -69,6 +81,17 @@
   text-transform: uppercase;
 
   color: $mainTitleColor;
+
+  @media screen and (min-width: $tablet) {
+    font-size: 48px;
+    line-height: 1.15;
+  }
+
+  @media screen and (min-width: $desktop) {
+    font-size: 58px;
+    line-height: 1.14;
+    letter-spacing: 0.04em;
+  }
 }
 
 .advantage__text {
@@ -79,4 +102,14 @@
   line-height: 1.7;
 
   color: $secondTextColor;
+  @media screen and (min-width: $tablet) {
+    font-size: 14px;
+    line-height: 1.74;
+  }
+
+  @media screen and (min-width: $desktop) {
+    font-size: 16px;
+    line-height: 1.76;
+    letter-spacing: 0.02em;
+  }
 }
