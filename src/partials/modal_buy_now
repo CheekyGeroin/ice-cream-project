@@ -1,0 +1,69 @@
+<div class="backdrop is-hidden" data-modal>
+  <div class="modal-box">
+    <button class="close-button" data-modal-close>
+      <span class="close-button__icon">X</span>
+    </button>
+    <div class="modal-box__wrapper">
+      <div class="modal-box__thumb">
+        <picture>
+          <source
+            media="(min-width: 768px)"
+            srcset="images/modal_buy/icecream.webp 1x, images/modal_buy/icecream@2x.webp 2x"
+            type="image/webp"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="images/modal_buy/icecream.png 1x, images/modal_buy/icecream@2x.png 2x"
+            type="image/png"
+          />
+          <img src="images/modal_buy/icecream.png" alt="icecream" width="250" height="249" />
+        </picture>
+      </div>
+      <b class="modal-box__title"
+        >Leave your contacts,<br />
+        we will call you back</b
+      >
+      <form class="form" autocomplete="off">
+        <div class="form__field">
+          <label class="form__label" for="name">Your name</label>
+          <div class="form__wrapper">
+            <input
+              class="form__input"
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Creamella Irish"
+              required
+            />
+          </div>
+        </div>
+        <div class="form__field">
+          <label class="form__label" for="tel">Your contact</label>
+          <div class="form__wrapper">
+            <input
+              class="form__input"
+              type="tel"
+              name="tel"
+              id="tel"
+              placeholder="+38 (012) 345 - 67- 98"
+              required
+            />
+          </div>
+        </div>
+        <div class="form__comment">
+          <label class="form__label" for="comment">Comment </label>
+          <textarea
+            class="form__textarea"
+            name="comment"
+            rows="3"
+            id="comment"
+            placeholder="Add your comment"
+          ></textarea>
+        </div>
+        <div class="button__wrapper">
+          <button class="button button--dark button__buy-modal" type="submit">Send</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,200 @@
+// Фон
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  opacity: 1;
+  transition: opacity $transition;
+}
+
+// .is-hidden {
+//   opacity: 0;
+//   visibility: hidden;
+//   pointer-events: none;
+// }
+
+// Віконце
+.modal-box {
+  transform: translate(-50%, -50%) scale(0.5);
+}
+
+.modal-box {
+  position: absolute;
+  top: 57%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  width: 95%;
+  border-radius: 24px;
+  background-color: $secondBackgroundColor;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  transition: transform $transition;
+
+  @media screen and (min-width: $mobile) {
+    max-width: 450px;
+  }
+}
+.modal-box__thumb {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-40%, -45%);
+  z-index: -1;
+}
+
+.modal-box__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  padding: 70px 20px 20px;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: $mainTitleColor;
+  overflow-y: auto;
+
+  @media screen and (max-width: 380px) {
+    padding-top: 50px;
+  }
+  @media screen and (min-width: $mobile) {
+    font-size: 14px;
+  }
+  @media screen and (min-width: $mobile) {
+    font-size: 16px;
+  }
+}
+
+.modal-box__title {
+  margin-bottom: 12px;
+  font-family: $titleFont;
+  font-weight: 200;
+  font-size: 20px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $mainTitleColor;
+
+  @media screen and (min-width: $mobile) {
+    font-size: 24px;
+  }
+}
+
+// Кнопка закриття віконця
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  min-width: 30px;
+  min-height: 30px;
+  background-color: transparent;
+  border: transparent;
+  border-radius: 50%;
+  transition: background-color $transition, color $transition;
+
+  color: $secondTitleColor;
+  font-family: $titleFont;
+
+  &:hover,
+  &:focus {
+    background: $secondBackgroundColor;
+    color: $accentButtonText;
+  }
+}
+
+.close-button__icon {
+  fill: $secondTitleColor;
+  transition: fill $transition;
+
+  .close-button:hover &,
+  .close-button:focus & {
+    fill: $accentButtonText;
+  }
+}
+
+// Форми
+.form__field {
+  margin-bottom: 10px;
+}
+
+.form__label {
+  display: block;
+  margin-bottom: 4px;
+  padding-left: 15px;
+}
+
+.form__wrapper {
+  position: relative;
+}
+
+.form__input {
+  width: 100%;
+  height: 40px;
+  align-items: center;
+  padding-left: 15px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 20px;
+  outline: none;
+  font-style: italic;
+  transition: border $transition;
+
+  .form__field:focus-within & {
+    border: 1px solid $mainTitleColor;
+  }
+  &::placeholder {
+    font-size: 14px;
+    font-style: italic;
+    line-height: 1.14;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+  }
+}
+
+.form__comment {
+  margin-bottom: 0;
+}
+
+.form__textarea {
+  display: block;
+  width: 100%;
+  resize: none;
+  padding: 15px;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.01em;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 20px;
+  outline: none;
+  transition: border $transition;
+
+  &::placeholder {
+    font-size: 14px;
+    font-style: italic;
+    line-height: 1.14;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+  }
+
+  .form__comment:focus-within & {
+    border: 1px solid $mainTitleColor;
+  }
+}
+
+// Кнопка відправки форми
+.button__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.button__buy-modal {
+  padding-left: 30px;
+  padding-right: 30px;
+}
