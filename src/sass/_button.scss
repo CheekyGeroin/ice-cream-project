@@ -1,0 +1,20 @@
+.button {
+  font-family: $mainFont;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border-radius: 22px;
+  border-color: transparent;
+}
+
+.button--light {
+  color: $mainTitleColor;
+  background-color: $mainBackgroundColor;
+}
+
+.button--dark {
+  color: $mainTextColor;
+  background-color: $mainTitleColor;
+}
