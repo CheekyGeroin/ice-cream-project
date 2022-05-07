@@ -1,0 +1,41 @@
+.reviews {
+    padding-top: 80px;
+    padding-bottom: 48px;
+}
+
+.reviews__photo {
+    width: 85px;
+    height: 85px;
+    border-radius: 44px;
+
+    background-image: url(../images/testimonials1_1.png);
+    margin: 0 auto 32px;
+}
+
+
+.reviews__quote {
+    margin-bottom: 16px;
+background-color: #FAFAFA;
+}
+
+.reviews__text {
+    color: $secondTextColor;
+    font-family: $mainFont;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 2.55;
+
+    text-align: center;
+}
+
+.reviews__subtitle {
+    color: $secondTextColor;
+    font-family: $mainFont;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.86;
+
+    text-align: center;
+}
