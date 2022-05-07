@@ -1,12 +1,36 @@
-body{
-    color: $mainTextColor;
-    background-color: $mainBackgroundColor;
-    font-family:$mainFont;
+body {
+  color: $mainTextColor;
+  background-color: $mainBackgroundColor;
+  font-family: $mainFont;
 }
-h1,h2,h3,h4,h5,h6,p,ul{
-    margin: 0;
-    padding: 0;
+// Зоголовки та абзаци
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
 }
-a{
-    text-decoration: none;
+
+//  Cписки
+ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+//  Посилання
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+//  Зображення
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
