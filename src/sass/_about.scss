@@ -47,6 +47,9 @@
 
     & img {
         display: inline-block;
+        @media screen and (max-width: $tablet - 1px) {
+            margin: 0 auto;
+        }
     }
 }
 
