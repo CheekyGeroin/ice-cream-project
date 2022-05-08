@@ -8,6 +8,34 @@
     }
 }
 
+.about__wrap {
+    margin: 0 auto;
+    background-image: url(/images/about/milk-m.png);
+    background-position: center bottom 135px;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        max-width: $tablet - 1px;
+        background-image: url(/images/about/milk-m@2x.png);
+    }
+
+    @media screen and (min-width: $tablet) {
+        max-width: $tablet;
+        background-image: none;
+    }
+
+    @media screen and (min-width: $desktop) {
+        max-width: 1600px;
+        background-image: url(/images/about/milk-d.png);
+        background-position: center bottom -40px;
+
+        @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+            background-image: url(/images/about/milk-d@2x.png);
+        }
+    }
+}
+
 .about__title {
     margin-bottom: 32px;
 
@@ -27,13 +55,14 @@
 }
 
 .about__img {
-    display: inline-block;
+    max-width: 280px;
     margin: 0 auto;
-    max-width: 100%;
     height: auto;
 
     @media screen and (min-width: $tablet) {
+        max-width: 336px;
         flex-basis: 50%;
+        margin: 0;
         margin-right: 16px;
     }
 
@@ -42,25 +71,28 @@
     }
 
     @media screen and (min-width: $desktop) {
+        max-width: 501px;
+        margin: 0;
         margin-right: 70px;
-    }
-
-    & img {
-        display: inline-block;
-        @media screen and (max-width: $tablet - 1px) {
-            margin: 0 auto;
-        }
     }
 }
 
 .about__content {
+    @media screen and (max-width: $tablet - 1px) {
+        max-width: 220px;
+        margin: 0 auto;
+    }
+
     @media screen and (min-width: $tablet) {
         flex-basis: 50%;
+        max-width: 334px;
         margin-left: 16px;
     }
 
     @media screen and (min-width: $desktop) {
-        margin-right: 70px;
+        max-width: 433px;
+        margin-left: 70px;
+        padding-top: 72px;
     }
 }
 
@@ -69,7 +101,6 @@
     font-size: 12px;
     line-height: 162%;
     color: $subtitleTextColor;
-    padding-right: 65px;
 
     &--dark {
         color: $secondTextColor;
@@ -78,29 +109,21 @@
     & + & {
         margin-top: 40px;
         margin-bottom: 20px;
-        padding-right: 78px;
-
-        @media screen and (min-width: $tablet) {
-            padding-right: 25px;
-        }
 
         @media screen and (min-width: $desktop) {
             margin-top: 32px;
             margin-bottom: 40px;
-            padding-right: 130px;
             font-size: 14px;
             line-height: 194%;
         }
     }
 
     @media screen and (min-width: $tablet) {
-        padding-right: 10px;
         font-size: 14px;
         line-height: 176%;
     }
 
     @media screen and (min-width: $desktop) {
-        padding-right: 120px;
         font-size: 16px;
         line-height: 176%;
     }
@@ -117,4 +140,11 @@
         font-size: 14px;
         line-height: 1.28;
     }
+}
+
+.button__icon {
+    width: 4px;
+    height: 8px;
+    margin-left: 14px;
+    fill: transparent;
 }
