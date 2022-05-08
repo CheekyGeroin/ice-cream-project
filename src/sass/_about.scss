@@ -4,7 +4,7 @@
     }
 
     @media screen and (min-width: $tablet) and (max-width: $desktop - 1px) {
-        padding: 20px;
+        padding: 20px 0;
     }
 }
 
@@ -52,22 +52,22 @@
     @media screen and (min-width: $tablet) {
         display: flex;
     }
+
+    @media screen and (max-width: $desktop - 1px) {
+        justify-content: center;
+    }
 }
 
 .about__img {
     max-width: 280px;
     margin: 0 auto;
-    height: auto;
+    margin-bottom: 40px;
 
     @media screen and (min-width: $tablet) {
-        max-width: 336px;
+        min-width: 336px;
         flex-basis: 50%;
         margin: 0;
         margin-right: 16px;
-    }
-
-    @media screen and (max-width: $tablet - 1px) {
-        margin-bottom: 40px;
     }
 
     @media screen and (min-width: $desktop) {
@@ -79,20 +79,19 @@
 
 .about__content {
     @media screen and (max-width: $tablet - 1px) {
-        max-width: 220px;
-        margin: 0 auto;
+        padding-right: 70px;
     }
 
     @media screen and (min-width: $tablet) {
         flex-basis: 50%;
-        max-width: 334px;
         margin-left: 16px;
+        padding-right: 20px;
     }
 
     @media screen and (min-width: $desktop) {
-        max-width: 433px;
         margin-left: 70px;
         padding-top: 72px;
+        padding-right: 145px;
     }
 }
 
@@ -102,16 +101,16 @@
     line-height: 1.62;
     color: $subtitleTextColor;
 
-    &--dark {
-        color: $secondTextColor;
-    }
-
     & + & {
-        margin-top: 40px;
+        margin-top: 20px;
         margin-bottom: 20px;
 
+        @media screen and (min-width: $tablet) {
+            margin-bottom: 40px;
+        }
+
         @media screen and (min-width: $desktop) {
-            margin-top: 32px;
+            margin-top: 30px;
             margin-bottom: 40px;
             font-size: 14px;
             line-height: 1.94;
@@ -121,16 +120,23 @@
     @media screen and (min-width: $tablet) {
         font-size: 14px;
         line-height: 1.76;
+        letter-spacing: 0.04em;
     }
 
     @media screen and (min-width: $desktop) {
         font-size: 16px;
         line-height: 1.76;
     }
+
+    &--dark {
+        color: $secondTextColor;
+        letter-spacing: normal;
+    }
 }
 
 .about__span {
     display: block;
+    height: 14px;
 }
 
 .about__button {
