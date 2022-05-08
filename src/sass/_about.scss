@@ -61,18 +61,19 @@
 .about__img {
     max-width: 280px;
     margin: 0 auto;
-    margin-bottom: 40px;
+
+    @media screen and (max-width: $tablet - 1px) {
+        margin-bottom: 40px;
+    }
 
     @media screen and (min-width: $tablet) {
         min-width: 336px;
         flex-basis: 50%;
-        margin: 0;
         margin-right: 16px;
     }
 
     @media screen and (min-width: $desktop) {
         max-width: 501px;
-        margin: 0;
         margin-right: 70px;
     }
 }
