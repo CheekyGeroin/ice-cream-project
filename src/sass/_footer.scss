@@ -1,4 +1,9 @@
-
+.footer__container{
+    @media screen and (min-width: $tablet){
+        display: flex;
+    justify-content: space-between;
+    }
+}
 .footer{
     position: relative;
     padding-top: 5px;
@@ -20,6 +25,9 @@
 .footer__label{
     text-align: left;
 }
+.contact__container{
+
+}
 .socials{
     display: flex;
     justify-content: flex-end;
@@ -27,9 +35,10 @@
     margin-bottom: 40px;
 }
 @media screen and (min-width: $tablet){
-    position: absolute;
-    top: 6px;
-    right: 18px;
+    // position: absolute;
+    // top: 6px;
+    // right: 18px;
+    margin-bottom: 40px;
 }
 }
 .socials__list{
@@ -67,9 +76,9 @@
         margin-bottom: 40px;
     }
     @media screen and (min-width: $tablet){
-        position: absolute;
-        top: 85px;
-        right: 18px;
+        // position: absolute;
+        // top: 85px;
+        // right: 18px;
     }
     
 }
