@@ -1,4 +1,5 @@
 .footer__container{
+    margin-bottom: 40px;
     @media screen and (min-width: $tablet){
         display: flex;
     justify-content: space-between;
@@ -11,7 +12,9 @@
 }
 .title__container{
     max-width: 234px;
-    margin-bottom: 40px;
+    @media screen and (max-width: 767px){
+        margin-bottom: 40px;
+    }
     @media screen and (min-width: $tablet){
         max-width: 340px;
     }
@@ -24,9 +27,6 @@
 }
 .footer__label{
     text-align: left;
-}
-.contact__container{
-
 }
 .socials{
     display: flex;
