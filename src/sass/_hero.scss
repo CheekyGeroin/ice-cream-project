@@ -3,9 +3,71 @@
     position: relative;
     height: 502px;
     background-color: rgba(255, 184, 202, 1);
-   
-    
+
+       
+@media screen and (min-width: 768px) {
+   height: 416px;
 }
+
+}
+.hero-image__cream{
+    position: absolute;
+    left: 117px;
+        top: 92px;
+
+    @media screen and (min-width: 768px) {
+        left: 322px;
+            top: 80px;
+            width: 143px;
+                height: 336px;
+    }
+           
+}
+.elipse{
+    width: 346px;
+        height: 344px;
+    border-radius: 50%;
+    background-color: #FFA5BA;;
+    position: absolute;
+        
+        left: 36px;
+        top: 83px;
+
+        @media screen and (min-width: 768px) {
+            width: 335px;
+                height: 333px;
+                left: 248px;
+                top: 43px;
+            }
+}
+
+.hero-image__milk{
+@media screen and (max-width:767px) {
+    display: none;
+}
+
+    position: absolute;
+    left: 32px;
+        top: 246px;
+}
+
+.hero-image__tasty{
+    @media screen and (max-width:767px) {
+            display: none;
+        }
+
+           position: absolute;
+          
+                   left: 546px;
+                   top: 265px;
+}
+
+.hero-container{
+    position: relative;
+}
+
+
+
 .hero-title{
     display: flex;
     flex-direction: column;
@@ -18,25 +80,12 @@ text-transform: uppercase;
 text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     color: #FFF;
     margin-bottom: 20px;
-}
-.image-hero{
-background-image: url(/images/hero/cream.png);
-background-repeat: no-repeat;
-width: 285px;
-    height: 419px;
-    left: 36px;
-        top: 83px;
-        z-index: 1;
-        position: absolute;
 
-@media screen and (min-width:768px) {
-    width: 335px;
-        height: 373px;
-        left: 248px;
-        top: 43px;
+    @media screen and (min-width:768px) {
+            font-size: 22px;
+        }
 }
 
-}
 
 
 
@@ -45,12 +94,21 @@ width: 285px;
     line-height: 46px;
     color: #D41443;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    @media screen and (min-width:768px) {
+            font-size: 34px;
+        }
 }
 .position{
     z-index: 2;
     position: absolute;
     left: 20px;
         top: 194px;
+
+        @media screen and (min-width:768px) {
+                left: 32px;
+                    top: 102px;
+            }
 }
 
 .button-hero {
@@ -92,4 +150,43 @@ text-align: center;
         background-color: $accentButtonColor-dark;
         color: $accentButtonText-dark;
     }
+}
+.block{
+@media screen and (max-width:767px) {
+    display: none;
+}
+
+    position: absolute;
+    left: 693px;
+        top: 92px;
+}
+
+.block__title{
+    font-family: 'Titan One';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 28px;
+        line-height: 32px;
+      
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+    
+        color: #D41443;
+}
+.block__text{
+    font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 8px;
+        line-height: 10px;
+        
+    
+        color: #FFFFFF;
+}
+
+
+.box{
+    position: absolute;
+    left: 184px;
+        top: 287px;
 }
