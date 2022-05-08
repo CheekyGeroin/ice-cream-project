@@ -1,5 +1,5 @@
 .about {
-    @media screen and (max-width: $tablet) {
+    @media screen and (max-width: $tablet - 1px) {
         padding-bottom: 0;
     }
 
@@ -99,7 +99,7 @@
 .about__text {
     font-weight: 500;
     font-size: 12px;
-    line-height: 162%;
+    line-height: 1.62;
     color: $subtitleTextColor;
 
     &--dark {
@@ -114,18 +114,18 @@
             margin-top: 32px;
             margin-bottom: 40px;
             font-size: 14px;
-            line-height: 194%;
+            line-height: 1.94;
         }
     }
 
     @media screen and (min-width: $tablet) {
         font-size: 14px;
-        line-height: 176%;
+        line-height: 1.76;
     }
 
     @media screen and (min-width: $desktop) {
         font-size: 16px;
-        line-height: 176%;
+        line-height: 1.76;
     }
 }
 
