@@ -161,6 +161,18 @@ text-align: center;
         top: 92px;
 }
 
+.block__title::after {
+    content: "";
+    z-index: -1;
+    background-color: #FFFFFF;;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+   position: absolute;
+   left: 30px;
+transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
 .block__title{
     font-family: 'Titan One';
         font-style: normal;
@@ -186,7 +198,35 @@ text-align: center;
 
 
 .box{
+    @media screen and (max-width:767px) {
+        display: none;
+    }
     position: absolute;
     left: 184px;
         top: 287px;
+}
+
+.box__text{
+font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 1.5;
+    
+    color: #FFFFFF;
+    width: 114px;
+        height: 48px;
+        margin-bottom: 7px;
+}
+
+.box__button{
+    display: flex;
+    align-items: center;
+    border-radius: 50%;
+    border: transparent;
+    width: 18px;
+    height: 18px;
+}
+.box__svg{
+    fill:#D41443;
 }
