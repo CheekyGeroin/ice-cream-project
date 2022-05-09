@@ -1,11 +1,14 @@
 const btnMenu = document.querySelector('[data-menu-button]');
 const menu = document.querySelector('[data-menu]');
+const bodyLock = document.querySelector('[menu-lock]');
+
 const toggleMenu = function () {
-  menu.classList.toggle('is-open');
-  btnMenu.classList.toggle('active');
-  btnMenu.setAttribute('aria-expanded', !expanded);
   const expanded = btnMenu.getAttribute('aria-expanded') === 'true' || false;
-  document.body.classList.toggle('lock-menu');
+  menu.classList.toggle('is-open');
+  btnMenu.setAttribute('aria-expanded', !expanded);
+
+  btnMenu.classList.toggle('active');
+  bodyLock.classList.toggle('lock-menu');
 };
 
 btnMenu.addEventListener('click', function (e) {
@@ -18,12 +21,9 @@ document.addEventListener('click', function (e) {
   const its_menu = target == menu || menu.contains(target);
   const its_btnMenu = target == btnMenu;
   const menu_is_active = menu.classList.contains('is-open');
+  const body_is_loked = bodyLock.classList.contains('lock-menu');
 
-  if (!its_menu && !its_btnMenu && menu_is_active) {
+  if (!its_menu && !its_btnMenu && menu_is_active && body_is_loked) {
     toggleMenu();
   }
-});
-
-btnMenu.addEventListener('click', () => {
-  document.body.classList.toggle('lock-menu');
 });
