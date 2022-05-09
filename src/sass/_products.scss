@@ -69,15 +69,20 @@ a {
   height: 40px;
   display: inline-block;
   text-decoration: none;
-  background-color: $secondBackgroundColor;
-  margin: 10px;
+
+  // background-color: $secondBackgroundColor;
+
   color: #fff;
   border-radius: 50%;
 }
 .product-additional__text {
   font-size: 16px;
-  color: #ffa5ba;
+  color: $secondBackgroundColor;
 }
-product-additional__title {
-  font-style: $titleFont;
+.product-additional__title {
+  font-family: $titleFont;
+  text-transform: uppercase;
+  font-size: 20px;
+  color: $mainTitleColor;
+  padding-bottom: 30px;
 }
