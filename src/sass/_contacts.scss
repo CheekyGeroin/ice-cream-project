@@ -275,7 +275,6 @@
 
 .contacts__icon--dark-theme {
     margin-left: 8px;
-    fill: transparent;
     stroke: $mainBackgroundColor;
     
     @media screen and (min-width: $tablet) {
@@ -285,6 +284,5 @@
 
 .contacts__icon--light-theme {
     margin-left: 13px;
-    fill: transparent;
     stroke: $accentButtonText;
 }
