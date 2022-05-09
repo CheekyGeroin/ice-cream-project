@@ -95,20 +95,21 @@ a {
   margin-bottom: 30px;
 }
 .product-additional__image {
-  width: 100%;
+  display: flex;
   // &:hover {
   //   transform: scale(1.5);
   //   transition: scale 250ms cubic-bezier(0.4, 0, 0.2, 1);
   // }
-
-  }
-  .product-additional__icecream1 {
-    &:hover {
-      transform: scale(1.5);
-      transition: scale 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    }
+}
+.product-additional__icecream1 {
+  width: 80px;
+  height: 60px;
+  &:hover {
+    transform: rotate(45deg) scale(1.5);
+    transition: scale 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
+
 .product-additional__image--2 {
   margin-left: 20px;
   background-size: contain;
