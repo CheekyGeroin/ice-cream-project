@@ -2,6 +2,19 @@ body {
   color: $mainTextColor;
   background-color: $mainBackgroundColor;
   font-family: $mainFont;
+
+  &.lock {
+    
+      &-form {
+        overflow: hidden;
+      }
+  
+      @media screen and (max-width: 1199px) {
+        &-menu {
+          overflow: hidden;
+        }
+      }
+    }
 }
 // Зоголовки та абзаци
 h1,
