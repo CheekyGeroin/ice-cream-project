@@ -3,8 +3,8 @@
     
     
     
-   .gallery-masonry {
-    min-height: 144px;
+  .gallery-masonry {
+    min-height: 121px;
     background: linear-gradient(
     $secondBackgroundColor 0%,
     $secondBackgroundColor 40%,
@@ -12,16 +12,22 @@
     $mainBackgroundColor 100%
     );
     @media screen and (min-width: $tablet) {
-    min-height: 258px;
+    min-height: 260px;
+    background: linear-gradient(
+    $secondBackgroundColor 0%,
+    $secondBackgroundColor 45%,
+    $mainBackgroundColor 45%,
+    $mainBackgroundColor 100%
+    );
+    }
+    @media screen and (min-width: $desktop) {
+    min-height: 435px;
     background: linear-gradient(
     $secondBackgroundColor 0%,
     $secondBackgroundColor 30%,
     $mainBackgroundColor 30%,
     $mainBackgroundColor 100%
     );
-    }
-    @media screen and (min-width: $desktop) {
-    min-height: 430px;
     }
     }
     

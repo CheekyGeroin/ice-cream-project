@@ -531,22 +531,24 @@ img {
 }
 
 .gallery-masonry {
-  min-height: 144px;
+  min-height: 121px;
   background: -webkit-gradient(linear, left top, left bottom, from(#fff5f6), color-stop(40%, #fff5f6), color-stop(40%, #ffffff), to(#ffffff));
   background: linear-gradient(#fff5f6 0%, #fff5f6 40%, #ffffff 40%, #ffffff 100%);
 }
 
 @media screen and (min-width: 768px) {
   .gallery-masonry {
-    min-height: 258px;
-    background: -webkit-gradient(linear, left top, left bottom, from(#fff5f6), color-stop(30%, #fff5f6), color-stop(30%, #ffffff), to(#ffffff));
-    background: linear-gradient(#fff5f6 0%, #fff5f6 30%, #ffffff 30%, #ffffff 100%);
+    min-height: 260px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#fff5f6), color-stop(45%, #fff5f6), color-stop(45%, #ffffff), to(#ffffff));
+    background: linear-gradient(#fff5f6 0%, #fff5f6 45%, #ffffff 45%, #ffffff 100%);
   }
 }
 
 @media screen and (min-width: 1280px) {
   .gallery-masonry {
-    min-height: 430px;
+    min-height: 435px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#fff5f6), color-stop(30%, #fff5f6), color-stop(30%, #ffffff), to(#ffffff));
+    background: linear-gradient(#fff5f6 0%, #fff5f6 30%, #ffffff 30%, #ffffff 100%);
   }
 }
 
@@ -600,6 +602,10 @@ img {
      object-fit: cover;
   border-radius: 10px;
   vertical-align: middle;
+}
+
+.small-image {
+  width: 40px;
 }
 
 .gallery__image {
