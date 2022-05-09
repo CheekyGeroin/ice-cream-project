@@ -1,0 +1,62 @@
+.burger {
+ 
+  width: 20px;
+  height: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+
+  border: none;
+  background: none;
+  cursor: pointer;
+
+  &.active{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-right: 32px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    display: none;
+  }
+}
+
+.burger__icon{
+  fill: currentColor;
+
+  transition: color $transition,
+    transform $transition,
+    opacity $transition,
+    overflow $transition;
+
+  &--open{
+    opacity: 1;
+    overflow: visible;
+    transform: scaleX(1);
+
+    .burger.active &{
+      opacity: 0;
+      overflow: hidden;
+      transform: scaleX(0);
+    }
+  }
+
+  &--close{
+    width: 14px;
+    height: 14px;
+    opacity: 0;
+    overflow: hidden;
+    transform: rotateZ(180deg) scaleX(0);
+
+    .burger.active &{
+      opacity: 1;
+      overflow: visible;
+      transform: rotateZ(0deg) scaleX(1);
+    }
+  }
+}
