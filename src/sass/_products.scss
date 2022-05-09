@@ -1,7 +1,11 @@
-/* Стили для подложки */
-
+/* загальне розташування кнопки */
+.product-additional__button {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
 .overlay {
-  /* Скрываем подложку  */
+  /* Приховування оверлея*/
   opacity: 0;
   visibility: hidden;
 
@@ -15,25 +19,25 @@
   transition: 0.3s all;
 }
 
-/* Стили для модальных окон */
+/* Стили для модального вікна */
 
 .modal {
-  /* Скрываем окна  */
+  /* Приховується вікно  */
   opacity: 0;
   visibility: hidden;
 
-  /*  Установаем ширину окна  */
+  /*  Ширина вікна   */
   width: 100%;
   max-width: 500px;
 
-  /*  Центрируем и задаем z-index */
+  /*  Позиціонування вікна  */
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 30; /* Должен быть выше чем у подложки*/
+  z-index: 30;
 
-  /*  Побочные стили   */
+  /*  Додаткові стилі для вікна   */
   box-shadow: 0 3px 10px -0.5px rgba(0, 0, 0, 0.2);
   text-align: center;
   padding: 30px;
@@ -42,7 +46,7 @@
   transition: 0.3s all;
 }
 
-/* Стили для активных классов подложки и окна */
+/* Стили для активних класів оверлей та вікна  */
 
 .modal.active,
 .overlay.active {
@@ -50,7 +54,7 @@
   visibility: visible;
 }
 
-/* Стили для кнопки закрытия */
+/* Кнопка закриття */
 
 .modal__cross {
   width: 15px;
@@ -62,7 +66,7 @@
   cursor: pointer;
 }
 
-/* Стили для кнопок. Мы ведь порядочные разработчики, негоже простые ссылки оставлять */
+/* Стиль для кнопки  */
 
 a {
   width: 40px;
@@ -75,14 +79,32 @@ a {
   color: #fff;
   border-radius: 50%;
 }
+/* Стилі для тексту і заголовків вікна */
 .product-additional__text {
+  display: block;
   font-size: 16px;
   color: $secondBackgroundColor;
+  margin-bottom: 30px;
 }
+
 .product-additional__title {
   font-family: $titleFont;
   text-transform: uppercase;
   font-size: 20px;
   color: $mainTitleColor;
-  padding-bottom: 30px;
+  margin-bottom: 30px;
+}
+.product-additional__image {
+  width: 100%;
+  &:hover {
+    transform: scale(1.5);
+    transition: scale 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &:hover.product-additional__image--2 {
+    transform: translateX(10);
+  }
+}
+.product-additional__image--2 {
+  margin-left: 20px;
+  background-size: contain;
 }
