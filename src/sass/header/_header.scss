@@ -8,10 +8,6 @@
   padding-bottom: 8px;
   background: rgba($heroBackgroundColor, 0.5);
 
-  transform: translateY(-100%);
-  transition: color $transition,
-              transform $transition;
-
   &__container{
     height: 100%;
     display: flex;
@@ -20,10 +16,6 @@
     justify-content: space-between;
     @media screen and (max-width: 1279px) {
     }
-  }
-
-  &.open{
-    transform: translateY(0);
   }
   
   @media screen and (min-width: 768px) {
