@@ -56,7 +56,7 @@
     }
 }
 
-.contacts-category {
+.contacts__category {
     display: block;
     margin-bottom: 20px;
     max-width: 80px;
@@ -64,7 +64,7 @@
 
     font-weight: 500;
     font-size: 12px;
-    line-height: 1.8;    
+    line-height: 1.83;    
     letter-spacing: 0.04em;
     text-align: center;
 
@@ -91,10 +91,18 @@
 .contacts__item ~ .contacts__item {
     padding-top: 24px;
     border-top: 1px solid $contactsBorderColor;
+
+    @media screen and (min-width: $tablet) {
+        padding-top: 32px;
+    }
 }
 
 .contacts__item:not(:last-child) {
     padding-bottom: 24px;
+
+    @media screen and (min-width: $tablet) {
+        padding-bottom: 32px;
+    }
 }
 
 .contacts__location {
@@ -102,7 +110,7 @@
 
     font-weight: 500;
     font-size: 12px;
-    line-height: 1.8;
+    line-height: 1.83;
     letter-spacing: 0.04em;
 
     color: $secondTextColor;
@@ -128,13 +136,14 @@
 
     @media screen and (min-width: $tablet) {
         font-size: 14px;
-        line-height: 1.6;
+        line-height: 1.64;
     }
 
     @media screen and (min-width: $desktop) {
         max-width: 250px;
         font-size: 16px;
-        line-height: 1.8;
+        line-height: 1.81;
+        letter-spacing: 0.04em;
     }
 }
 
@@ -142,7 +151,7 @@
     max-width: 130px;
     font-weight: 500;
     font-size: 12px;
-    line-height: 1.8;
+    line-height: 1.83;
 
     color: $secondTextColor;
 
@@ -160,13 +169,14 @@
         max-width: 165px;
         font-size: 16px;
         line-height: 1.87;
+        letter-spacing: 0.04em;
     }
 }
 
 .contacts__opening-hours {
     font-weight: 500;
     font-size: 12px;
-    line-height: 1.8;
+    line-height: 1.83;
 
     color: $secondTitleColor;
 
@@ -200,7 +210,7 @@
     }
 }
 
-.buttons-list {
+.buttons__list {
    display: flex;
    flex-direction: column;
    align-items: center;
@@ -263,14 +273,18 @@
     }
 }
 
-.contacts__icon {
-    margin-left: 10px;
-}
-
 .contacts__icon--dark-theme {
-    stroke: $mainBackgroundColor;   
+    margin-left: 8px;
+    fill: transparent;
+    stroke: $mainBackgroundColor;
+    
+    @media screen and (min-width: $tablet) {
+        margin-left: 13px;
+    }
 }
 
 .contacts__icon--light-theme {
+    margin-left: 13px;
+    fill: transparent;
     stroke: $accentButtonText;
 }
