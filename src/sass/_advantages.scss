@@ -1,0 +1,120 @@
+.advantage {
+  padding-right: 60px;
+
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    padding-right: 200px;
+  }
+  @media screen and (min-width: $tablet) and (max-width: $desktop - 1px) {
+    padding-left: 16px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding-right: 120px;
+  }
+}
+
+.advantage__item {
+  @media screen and (min-width: $tablet) {
+    width: calc(100% / 3);
+  }
+}
+.advantage__item:not(:last-child) {
+  @media screen and (max-width: $tablet - 1px) {
+    margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    margin-right: 16px;
+  }
+  @media screen and (min-width: $desktop) {
+    margin-right: 120px;
+  }
+}
+
+.advantage__item::before {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 50px;
+  margin-bottom: 15px;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 35px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 40px;
+  }
+}
+
+.advantage__item:nth-child(1):before {
+  background-image: url(../images/advantage/icon1.png);
+
+  @media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url(../images/advantage/icon1@2x.png);
+  }
+}
+
+.advantage__item:nth-child(2):before {
+  background-image: url(../images/advantage/icon2.png);
+
+  @media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url(../images/advantage/icon2@2x.png);
+  }
+}
+
+.advantage__item:nth-child(3):before {
+  background-image: url(../images/advantage/icon3.png);
+
+  @media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url(../images/advantage/icon3@2x.png);
+  }
+}
+
+.advantage__number {
+  display: block;
+  margin-bottom: 15px;
+  font-family: $titleFont;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1.14;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: $mainTitleColor;
+
+  @media screen and (min-width: $tablet) {
+    font-size: 48px;
+    line-height: 1.15;
+  }
+
+  @media screen and (min-width: $desktop) {
+    font-size: 58px;
+    line-height: 1.14;
+    letter-spacing: 0.04em;
+  }
+}
+
+.advantage__text {
+  font-family: $mainFont;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.7;
+
+  color: $secondTextColor;
+  @media screen and (min-width: $tablet) {
+    font-size: 14px;
+    line-height: 1.74;
+  }
+
+  @media screen and (min-width: $desktop) {
+    font-size: 16px;
+    line-height: 1.76;
+    letter-spacing: 0.02em;
+  }
+}

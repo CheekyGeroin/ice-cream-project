@@ -1,14 +1,29 @@
-
+.footer__container{
+    margin-bottom: 40px;
+    @media screen and (min-width: $tablet){
+        display: flex;
+    justify-content: space-between;
+    }
+}
 .footer{
+    position: relative;
+    padding-top: 5px;
     background-color: $secondBackgroundColor;
 }
 .title__container{
     max-width: 234px;
+    @media screen and (max-width: 767px){
+        margin-bottom: 40px;
+    }
+    @media screen and (min-width: $tablet){
+        max-width: 340px;
+    }
+    @media screen and (min-width: $desktop){
+        max-width: 479px;
+    }
 }
 .footer__title{
-text-align: left;
-margin-bottom: 40px;
-
+    text-align: left;
 }
 .footer__label{
     text-align: left;
@@ -16,7 +31,15 @@ margin-bottom: 40px;
 .socials{
     display: flex;
     justify-content: flex-end;
-margin-bottom: 40px;
+@media screen and (max-width:767px){
+    margin-bottom: 40px;
+}
+@media screen and (min-width: $tablet){
+    // position: absolute;
+    // top: 6px;
+    // right: 18px;
+    margin-bottom: 40px;
+}
 }
 .socials__list{
     @extend %list;
@@ -40,11 +63,8 @@ margin-bottom: 40px;
         }
     }
 }
-.socials__link{
-}
 .socials__icon{
     fill: #FEA5BB;
-    background-color: $mainBackgroundColor;
     transition: fill $transition;
 
     &:hover, &:focus{
@@ -52,7 +72,15 @@ margin-bottom: 40px;
     }
 }
 .contact{
-    margin-bottom: 40px;
+    @media screen and (max-width: 767px){
+        margin-bottom: 40px;
+    }
+    @media screen and (min-width: $tablet){
+        // position: absolute;
+        // top: 85px;
+        // right: 18px;
+    }
+    
 }
 .contact__text{
     font-weight: 700;
@@ -60,6 +88,12 @@ margin-bottom: 40px;
     line-height: 1.86;
     text-align: right;
     color: $secondTextColor;
+    @media screen and (min-width: $tablet){
+        font-size: 14px;
+    }
+    @media screen and (min-width: $desktop){
+        font-size: 16px;
+    }
 }
 .contact__link{
   color: $mainTitleColor;
@@ -73,12 +107,15 @@ margin-bottom: 40px;
     padding-top: 16px;
     padding-bottom: 20px;
    }
-   
+   @media screen and (min-width: $tablet){
+       padding: 8px 0;
+   }
 }
-.copyrights__container{
-    
+.copyrights__container{ 
     text-align: center;
-    max-width: 136px;
+    @media screen and (max-width: 767px){
+        max-width: 149px;
+    }
 }
 .copyrights__text{
     font-weight: 700;
@@ -86,4 +123,7 @@ margin-bottom: 40px;
     line-height: 1.52;
     text-align: center;
     color: $subtitleTextColor;
+    @media screen and (min-width: $tablet){
+        line-height: 1.86;
+    }
 }
