@@ -13,12 +13,47 @@
 }
 
 
-.reviews__quote {
+.reviews__field {
     margin-bottom: 16px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 30px;
+    padding-bottom: 17px;
 background-color: #FAFAFA;
 }
 
+.reviews__quote {
+    // position: relative;
+    padding-left: 15px;
+    padding-right: 15px;
+    // z-index: 3;
+
+    &::before {
+        content: '';
+        width: 54px;
+        height: 40px;
+        position: relative;
+        display: block;
+        top: 23px;
+        left: 0px;
+        // top: 0;
+        // z-index: 2;
+
+        // transform: translate(-90%, -50%);
+
+        // background-color: aqua;
+
+        background-image: url("../images/quote.png");
+    }
+
+}
+
 .reviews__text {
+    // display: block;
+    position: relative;
+    // z-index: 5;
+    margin-left: 0;
+           
     color: $secondTextColor;
     font-family: $mainFont;
     font-style: normal;
@@ -27,6 +62,15 @@ background-color: #FAFAFA;
     line-height: 2.55;
 
     text-align: center;
+
+    background-image: repeating-linear-gradient(
+        to top,
+        #E1E1E1,
+        #E1E1E1 1px,
+        transparent 1px,
+        transparent 31px
+        );
+
 }
 
 .reviews__subtitle {
