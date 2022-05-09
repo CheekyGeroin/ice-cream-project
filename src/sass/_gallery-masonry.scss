@@ -1,8 +1,29 @@
   
-    .gallery-masonry {
-        background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,245,246,1) 30%, rgba(255, 245, 246, 1) 60%, rgba(255, 245, 246, 1) 100%);
-    }
     
+    
+    
+    
+   .gallery-masonry {
+    min-height: 144px;
+    background: linear-gradient(
+    $secondBackgroundColor 0%,
+    $secondBackgroundColor 40%,
+    $mainBackgroundColor 40%,
+    $mainBackgroundColor 100%
+    );
+    @media screen and (min-width: $tablet) {
+    min-height: 258px;
+    background: linear-gradient(
+    $secondBackgroundColor 0%,
+    $secondBackgroundColor 30%,
+    $mainBackgroundColor 30%,
+    $mainBackgroundColor 100%
+    );
+    }
+    @media screen and (min-width: $desktop) {
+    min-height: 430px;
+    }
+    }
     
     .grid__list  {      
         display: grid;
@@ -54,7 +75,9 @@
     }
     
    
-    
+    .small-image {
+        width: 40px;
+    }
     
    
       
@@ -84,11 +107,11 @@
     @media (min-width: 400px ) and (max-width:767px) {
     
         .grid__list {
-            gap: 4px;
+            gap: 3px;
         }
     
     .child__grid {
-        gap: 4px;
+        gap: 3px;
     }
     
         .box1 {
@@ -113,7 +136,7 @@
         }
 
         .small-image {
-            width: 45px;
+            width: 61px;
         }
         
     }
@@ -129,11 +152,11 @@
 
 
         .grid__list {
-            gap: 8px;
+            gap: 4px;
         }
     
         .child__grid {
-            gap: 8px;
+            gap: 4px;
         }
     
         .gallery__image {
@@ -163,7 +186,7 @@
         }
 
         .small-image {
-            width: 83px;
+            width: 85px;
         }
     
     }
@@ -175,10 +198,10 @@
             padding-right: 123px;
         }
         .grid__list {
-            gap: 10px;
+            gap: 6px;
         }
         .child__grid {
-            gap: 10px;
+            gap: 6px;
         }
         
         .gallery__image {
@@ -209,7 +232,7 @@
     }
     
     .small-image {
-        width: 141px;
+        width: 143px;
     }
     
     }
