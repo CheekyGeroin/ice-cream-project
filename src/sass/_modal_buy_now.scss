@@ -20,11 +20,11 @@
 }
 
 // Віконце
-.modal-box {
+.modal-buy__box {
   transform: translate(-50%, -50%) scale(0.5);
 }
 
-.modal-box {
+.modal-buy__box {
   position: absolute;
   top: 57%;
   left: 50%;
@@ -40,7 +40,7 @@
     max-width: 450px;
   }
 }
-.modal-box__thumb {
+.modal-buy__thumb {
   position: absolute;
   top: 0;
   left: 50%;
@@ -48,7 +48,7 @@
   z-index: -1;
 }
 
-.modal-box__wrapper {
+.modal-buy__wrapper {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -72,7 +72,7 @@
   }
 }
 
-.modal-box__title {
+.modal-buy__title {
   margin-bottom: 12px;
   font-family: $titleFont;
   font-weight: 200;
@@ -120,21 +120,21 @@
 }
 
 // Форми
-.form__field {
+.form-buy__field {
   margin-bottom: 10px;
 }
 
-.form__label {
+.form-buy__label {
   display: block;
   margin-bottom: 4px;
   padding-left: 15px;
 }
 
-.form__wrapper {
+.form-buy__wrapper {
   position: relative;
 }
 
-.form__input {
+.form-buy__input {
   width: 100%;
   height: 40px;
   align-items: center;
@@ -145,7 +145,7 @@
   font-style: italic;
   transition: border $transition;
 
-  .form__field:focus-within & {
+  .form-buy__field:focus-within & {
     border: 1px solid $mainTitleColor;
   }
   &::placeholder {
@@ -157,11 +157,11 @@
   }
 }
 
-.form__comment {
+.form-buy__comment {
   margin-bottom: 0;
 }
 
-.form__textarea {
+.form-buy__textarea {
   display: block;
   width: 100%;
   resize: none;
@@ -182,20 +182,20 @@
     color: rgba(117, 117, 117, 0.5);
   }
 
-  .form__comment:focus-within & {
+  .form-buy__comment:focus-within & {
     border: 1px solid $mainTitleColor;
   }
 }
 
 // Кнопка відправки форми
-.button__wrapper {
+.button-buy__wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 20px;
 }
 
-.button__buy-modal {
+.button-buy {
   padding-left: 30px;
   padding-right: 30px;
 }

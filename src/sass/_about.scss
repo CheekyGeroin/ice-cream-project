@@ -129,6 +129,10 @@
         color: $secondTextColor;
         letter-spacing: normal;
     }
+
+    &--red {
+        color: $secondTitleColor;
+    }
 }
 
 .about__span {
