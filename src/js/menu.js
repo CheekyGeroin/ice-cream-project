@@ -1,6 +1,6 @@
 const btnMenu = document.querySelector('[data-menu-button]');
 const menu = document.querySelector('[data-menu]');
-const bodyLock = document.querySelector('[menu-lock]');
+const bodyLock = document.querySelector('[data-menu-lock]');
 
 const toggleMenu = function () {
   const expanded = btnMenu.getAttribute('aria-expanded') === 'true' || false;
