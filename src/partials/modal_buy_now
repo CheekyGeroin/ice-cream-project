@@ -60,7 +60,7 @@
             placeholder="Add your comment"
           ></textarea>
         </div>
-        <div class="button-byu__wrapper">
+        <div class="button-buy__wrapper">
           <button class="button button--dark button-buy" type="submit">Send</button>
         </div>
       </form>
