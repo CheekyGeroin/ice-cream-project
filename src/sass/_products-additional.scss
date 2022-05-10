@@ -1,0 +1,125 @@
+/* видалити */
+.test {
+  padding-top: 100px;
+}
+/* загальне розташування кнопки */
+.product-additional__button {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+.overlay {
+  /* Приховування оверлея*/
+  opacity: 0;
+  visibility: hidden;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 20;
+  transition: 0.3s all;
+}
+
+/* Стили для модального вікна */
+
+.modal {
+  /* Приховується вікно  */
+  opacity: 0;
+  visibility: hidden;
+
+  /*  Ширина вікна   */
+  width: 100%;
+  max-width: 500px;
+
+  /*  Позиціонування вікна  */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 30;
+
+  /*  Додаткові стилі для вікна   */
+  box-shadow: 0 3px 10px -0.5px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  padding: 30px;
+  border-radius: 10px;
+  background-color: $heroBackgroundColor;
+  transition: 0.3s all;
+}
+
+/* Стили для активних класів оверлей та вікна  */
+
+.modal.active,
+.overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Кнопка закриття */
+
+.modal__cross {
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  fill: #444;
+  cursor: pointer;
+}
+
+/* Стиль для кнопки  */
+
+.product-additional__link {
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  text-decoration: none;
+
+  // background-color: $secondBackgroundColor;
+
+  color: #fff;
+  border-radius: 50%;
+}
+/* Стилі для тексту і заголовків вікна */
+.product-additional__text {
+  display: block;
+  font-size: 16px;
+  color: $secondBackgroundColor;
+  margin-bottom: 30px;
+}
+
+.product-additional__title {
+  font-family: $titleFont;
+  text-transform: uppercase;
+  font-size: 20px;
+  color: $mainTitleColor;
+  margin-bottom: 30px;
+}
+.product-additional__image {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  max-width: 400px;
+  justify-content: space-around;
+}
+
+.product-additional__icecoffee1,
+.product-additional__icecoffee2,
+.product-additional__icecream2,
+.product-additional__icecream1,
+.product-additional__milkshake1,
+.product-additional__milkshake2 {
+  border-radius: 5px;
+  overflow: hidden;
+  display: block;
+  width: 80px;
+  height: 80px;
+  transition: transform 1s cubic-bezier(0.4, 0, 0.2, 1);
+  transform-origin: center;
+  &:hover {
+    transform: rotate(-360deg) scale(1.5);
+  }
+}
