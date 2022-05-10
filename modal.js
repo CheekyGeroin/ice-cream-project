@@ -3,32 +3,30 @@
 
 document.addEventListener('DOMContentLoaded', function() {
 
-   /* Записываем в переменные массив элементов-кнопок и подложку.
-      Подложке зададим id, чтобы не влиять на другие элементы с классом overlay*/
+   /* записуємо в змінні масив елементів-кнопок і оверлей, оверлею задаємо  id щоб не впливати на інші елементи з класом overlay
+   */
    var modalButtons = document.querySelectorAll('.js-open-modal'),
        overlay      = document.querySelector('.js-overlay-modal'),
        closeButtons = document.querySelectorAll('.js-modal-close');
 
 
-   /* Перебираем массив кнопок */
+   /* Перебираємо масив кнопок */
    modalButtons.forEach(function(item){
 
-      /* Назначаем каждой кнопке обработчик клика */
+      /* Призначаємо кожній кнопці обробку кліку */
       item.addEventListener('click', function(e) {
 
-         /* Предотвращаем стандартное действие элемента. Так как кнопку разные
-            люди могут сделать по-разному. Кто-то сделает ссылку, кто-то кнопку.
-            Нужно подстраховаться. */
+   
          e.preventDefault();
 
-         /* При каждом клике на кнопку мы будем забирать содержимое атрибута data-modal
-            и будем искать модальное окно с таким же атрибутом. */
+         /* При кожному клику на кнопку ми будемо забирати вміст атрибуту data-modal
+            і будемо шукати модальне вікно з таким же атрибутом. */
          var modalId = this.getAttribute('data-modal'),
              modalElem = document.querySelector('.modal[data-modal="' + modalId + '"]');
 
 
-         /* После того как нашли нужное модальное окно, добавим классы
-            подложке и окну чтобы показать их. */
+         /* Після того як знайшли потрібне модальне вікно, добавим класи
+            оверлею і вікну щоб показати їх. */
          modalElem.classList.add('active');
          overlay.classList.add('active');
       }); // end click
@@ -67,4 +65,4 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-}); // end ready
+}); 
