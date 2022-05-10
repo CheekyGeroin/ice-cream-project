@@ -22,11 +22,3 @@ $(document).ready(function () {
     }
   });
 });
-// $(document).ready(function () {
-//   $('.nav__link').click(function (event) {
-//     event.preventDefault();
-//     $('html, body').animate({ scrollTop: $(this.hash).offset() }, 1000);
-//     console.log(555);
-//     console.log($(this.hash));
-//   });
-// });
