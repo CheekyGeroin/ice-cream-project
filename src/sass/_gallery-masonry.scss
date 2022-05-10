@@ -1,43 +1,43 @@
   
     
+    .grid__gallery {
+        min-height: 121px;
+        background: linear-gradient(
+        $secondBackgroundColor 0%,
+        $secondBackgroundColor 40%,
+        $mainBackgroundColor 40%,
+        $mainBackgroundColor 100%
+        );
+        @media screen and (min-width: $tablet) {
+        min-height: 260px;
+        background: linear-gradient(
+        $secondBackgroundColor 0%,
+        $secondBackgroundColor 45%,
+        $mainBackgroundColor 45%,
+        $mainBackgroundColor 100%
+        );
+        }
+        @media screen and (min-width: $desktop) {
+        min-height: 435px;
+        background: linear-gradient(
+        $secondBackgroundColor 0%,
+        $secondBackgroundColor 30%,
+        $mainBackgroundColor 30%,
+        $mainBackgroundColor 100%
+        );
+        }
+        }
+        
+        .grid__list  {      
+            display: grid;
+            grid-template-columns: 1fr 1fr 2fr 1fr 1fr 1fr;
+            grid-auto-rows: auto;
+            gap: 3px;  
+    
+        }
     
     
     
-  .gallery-masonry {
-    min-height: 121px;
-    background: linear-gradient(
-    $secondBackgroundColor 0%,
-    $secondBackgroundColor 40%,
-    $mainBackgroundColor 40%,
-    $mainBackgroundColor 100%
-    );
-    @media screen and (min-width: $tablet) {
-    min-height: 260px;
-    background: linear-gradient(
-    $secondBackgroundColor 0%,
-    $secondBackgroundColor 45%,
-    $mainBackgroundColor 45%,
-    $mainBackgroundColor 100%
-    );
-    }
-    @media screen and (min-width: $desktop) {
-    min-height: 435px;
-    background: linear-gradient(
-    $secondBackgroundColor 0%,
-    $secondBackgroundColor 30%,
-    $mainBackgroundColor 30%,
-    $mainBackgroundColor 100%
-    );
-    }
-    }
-    
-    .grid__list  {      
-        display: grid;
-        grid-template-columns: 1fr 1fr 2fr 1fr 1fr 1fr;
-        grid-auto-rows: auto;
-        gap: 3px;  
-
-    }
     
     
     .child__grid {
