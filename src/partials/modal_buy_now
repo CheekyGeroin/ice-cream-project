@@ -1,10 +1,10 @@
 <div class="backdrop is-hidden" data-modal>
-  <div class="modal-box">
+  <div class="modal-buy__box">
     <button class="close-button" data-modal-close>
       <span class="close-button__icon">X</span>
     </button>
-    <div class="modal-box__wrapper">
-      <div class="modal-box__thumb">
+    <div class="modal-buy__wrapper">
+      <div class="modal-buy__thumb">
         <picture>
           <source
             media="(min-width: 768px)"
@@ -19,16 +19,16 @@
           <img src="images/modal_buy/icecream.png" alt="icecream" width="250" height="249" />
         </picture>
       </div>
-      <b class="modal-box__title"
+      <b class="modal-buy__title"
         >Leave your contacts,<br />
         we will call you back</b
       >
-      <form class="form" autocomplete="off">
-        <div class="form__field">
-          <label class="form__label" for="name">Your name</label>
-          <div class="form__wrapper">
+      <form class="form-buy" autocomplete="off">
+        <div class="form-buy__field">
+          <label class="form-buy__label" for="name">Your name</label>
+          <div class="form-buy__wrapper">
             <input
-              class="form__input"
+              class="form-buy__input"
               type="text"
               name="name"
               id="name"
@@ -37,11 +37,11 @@
             />
           </div>
         </div>
-        <div class="form__field">
-          <label class="form__label" for="tel">Your contact</label>
-          <div class="form__wrapper">
+        <div class="form-buy__field">
+          <label class="form-buy__label" for="tel">Your contact</label>
+          <div class="form-buy__wrapper">
             <input
-              class="form__input"
+              class="form-buy__input"
               type="tel"
               name="tel"
               id="tel"
@@ -50,18 +50,18 @@
             />
           </div>
         </div>
-        <div class="form__comment">
-          <label class="form__label" for="comment">Comment </label>
+        <div class="form-buy__comment">
+          <label class="form-buy__label" for="comment">Comment </label>
           <textarea
-            class="form__textarea"
+            class="form-buy__textarea"
             name="comment"
             rows="3"
             id="comment"
             placeholder="Add your comment"
           ></textarea>
         </div>
-        <div class="button__wrapper">
-          <button class="button button--dark button__buy-modal" type="submit">Send</button>
+        <div class="button-byu__wrapper">
+          <button class="button button--dark button-buy" type="submit">Send</button>
         </div>
       </form>
     </div>
