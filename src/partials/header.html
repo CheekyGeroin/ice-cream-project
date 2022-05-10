@@ -1,7 +1,11 @@
 <header class="header">
   <div class="container header__container">
     <a href="./index.html" class="logo header__logo">
-      <img src="images/logo.png" alt="">
+      <picture>
+        <source srcset="images/logo.webp 1x, images/logo@2x.webp 2x" type="image/webp"
+          srcset="./images/logo.png 1x, ./images/logo@2x.png 2x" type="image/jpeg" />
+        <img src="images/logo.png" alt="logo" />
+      </picture>
     </a>
     <div class="header__menu">
       <button class="burger" type="button" aria-expanded="false" aria-controls="menu" data-menu-button>
