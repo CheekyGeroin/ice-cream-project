@@ -1,5 +1,5 @@
 .hero{
-    max-width: 1600px;
+    // max-width: 1600px;
     position: relative;
     height: 502px;
     background-color: rgba(255, 184, 202, 1);
@@ -95,9 +95,7 @@ overflow: hidden;
 }
 
 .hero__container {
-    @media screen and (max-width:1279px) {
-        position: relative;
-    }
+    position: relative;
     
 
 
