@@ -1,29 +1,34 @@
 .advantage {
+  padding-right: 60px;
+
   @media screen and (min-width: $tablet) {
-    margin: -10px;
     display: flex;
+    padding-right: 200px;
   }
+  @media screen and (min-width: $tablet) and (max-width: $desktop - 1px) {
+    padding-left: 16px;
+  }
+
   @media screen and (min-width: $desktop) {
-    margin: -60px;
+    padding-right: 120px;
   }
 }
 
 .advantage__item {
-  max-width: 230px;
   @media screen and (min-width: $tablet) {
-    margin: 10px;
-    max-width: 160px;
-  }
-
-  @media screen and (min-width: $desktop) {
-    margin: 60px;
-    max-width: 300px;
+    width: calc(100% / 3);
   }
 }
-
 .advantage__item:not(:last-child) {
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: $tablet - 1px) {
     margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    margin-right: 16px;
+  }
+  @media screen and (min-width: $desktop) {
+    margin-right: 120px;
   }
 }
 
