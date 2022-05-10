@@ -1,12 +1,10 @@
 .header {
-  position: fixed;
+  position: absolute;
   top: 0;
   width: 100%;
   z-index: 1;
 
   padding-top: 8px;
-  padding-bottom: 8px;
-  // background: rgba($heroBackgroundColor, 0.5);
 
   &__container{
     height: 100%;
@@ -20,12 +18,10 @@
   
   @media screen and (min-width: 768px) {
     padding-top: 32px;
-    padding-bottom: 16px;
   }
 
   @media screen and (min-width: 768px) {
     padding-top: 37px;
-    padding-bottom: 18px;
   }
   
 }
