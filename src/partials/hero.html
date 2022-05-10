@@ -1,6 +1,6 @@
 
 <section class="hero">
-    <div class="container hero-container">
+    <div class="container hero__container">
         <div>
             <div class="elipse"></div>
             <picture>
@@ -19,32 +19,41 @@
             </picture>
 
             <picture>
-<source srcset="/images/hero/milk_l.png 1x, /images/hero/milk_l@2x.png 2x" media="(min-width:1200px)"
-type="image/webp">
+<source srcset="/images/hero/milk_l.png 1x, /images/hero/milk_l@2x.png 2x" media="(min-width:1280px)"
+>
 
                 <source srcset="/images/hero/milk_m.png 1x, /images/hero/milk_m@2x.png 2x" media="(min-width:768px)"
-                type="image/webp>
+                >
+
                 <img class="hero-image__milk" src="/images/hero/milk_m.png" alt="">
             </picture>
 
             <picture>
-<source srcset="/images/hero/girl_l.png 1x, /images/hero/girl_l@2x.png 2x" media="(min-width:1280px)" type="images/webp">
+<source srcset="/images/hero/girl_l.png 1x, /images/hero/girl_l@2x.png 2x" media="(min-width:1280px)" >
 
                 <source 
                 srcset="/images/hero/girl_m.png 1x, /images/hero/girl_m@2x.png 2x" 
                 media="(min-width:768px)"
-                type="images/webp">
+                >
                 <img class="hero-image__tasty" src="/images/hero/girl_m.png" alt="">
             </picture>
 
         </div>
 
         <div class="position">
-            <h1 class="hero-title">ice cream <br>
-                made with <span class="hero-subtitle">passion</span>
+            <h1 class="hero__title">ice cream <br>
+                made with <span class="hero__subtitle">passion</span>
             </h1>
-            <button type="button" class="button-hero button--dark ">Products</button>
-            <button type="button" class="button-hero button--light">How it’s made?</button>
+            <ul class="hero__list">
+                <li class="hero__item" ><a href="#product">
+                    <button type="button" class="hero__button button--dark ">Products</button>
+                </a></li>
+                <li class="hero__item" ><a href="#howmade">
+                    <button type="button" class="hero__button button--light">How it’s made?</button>
+                </a></li>
+            </ul>
+           
+          
         </div>
 
         <div class="block">
@@ -63,7 +72,7 @@ type="image/webp">
         </div>
 
         <div class="box">
-            <p class="box__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            <p class="box__text">Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit,<br> sed do eiusmod tempor <br>
                 incididunt ut labore et</p>
             <button type="button" class="box__button">
                 <svg class="box__svg" width="8px" height="8px">
