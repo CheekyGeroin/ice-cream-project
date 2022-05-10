@@ -97,7 +97,7 @@ a {
 .product-additional__image {
   margin: 0 auto;
   display: flex;
-  width: 400px;
+  max-width: 400px;
   justify-content: space-around;
 }
 
