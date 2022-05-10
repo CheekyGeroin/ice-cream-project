@@ -1,30 +1,66 @@
-.ice{
-    display: flex;
+.section__products{
+padding-top: 80px;
+}
+.section-wrapper{
+margin-bottom: 8px;
 }
 
+.ice{
+    display: block;
+    padding-top: 140px;
+}
+
+
 .ice__item{
-    
+    margin-bottom: 140px;
+    position: relative;
+
+    padding-top: 140px;
     padding-bottom: 60px;
-    width: 100%;
+    // margin-bottom: 140px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    width: 280px;
     background-color: #FFB8CA;
     border-radius: 24px;
-    margin-right: 32px;
+    // margin-right: 32px;
 
     &:last-child{
-        margin-right: 0px;
+        margin-bottom: 0px;
     }
-    &-coffee{
+    &--coffee{
         background-color:#F0D1A5 ;
         
     }
-    &-milkshakes{
+    &--milkshakes{
         background-color: #C2E297;
+    }
+    &::before{
+        content:"";
+        position: absolute;
+        
+        left: 0px;
+        top: -30%;
+        width: 280px;
+        height: 280px;
+
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        background-repeat: no-repeat;
+        background-size: contain;
+
+        
+        background-image:url("../images/products/home-pic1.png");
+
+        
     }
 }
 
-
-
 .ice__name {
+    margin-top: 20px;
     margin-bottom: 32px;
 
     font-family: $titleFont;
@@ -47,56 +83,119 @@
         background-repeat: no-repeat;
         background-size: contain;
 
-        background-image: url("../images/ttt.png");
+        background-image: url("../images/pointproducts.png");
         
-        // @include mq (retina) {
-        //     background-image: url("../images/WebStudio/hero/bg-hero_s@2x.png");
-        // }
+        @media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+            background-image: url(../images/pointproducts@2x.png);
+          }
      
     }
+}
+.ice__name--cream{
+    
+    // &::before{
+    //     content:"";
+    //     position: absolute;
+        
+    //     left: 0px;
+    //     top: -25%;
+    //     width: 280px;
+    //     height: 280px;
+
+    //     display: block;
+    //     margin-left: auto;
+    //     margin-right: auto;
+    //     background-repeat: no-repeat;
+    //     background-size: contain;
+
+        
+    //     background-image:url("../images/products/home-pic1.png");
+
+        
+    // }
+
+}
+.ice__name--coffee{
+    
     &::before{
         content:"";
-        // position: absolute;
-        // top: -50%;
-        // left: 0;
-        margin-bottom: 32px;
+        position: absolute;
+        
+        left: 0px;
+        top: -25%;
+        width: 280px;
+        height: 280px;
+
         display: block;
-        width:394px;
-        height: 394px;
+        width:280px;
+        height: 280px;
         margin-left: auto;
         margin-right: auto;
         background-repeat: no-repeat;
         background-size: contain;
 
         
-        // background-image: 
-        // url("../images/home-pic1.png");
-        
-        background-image:url("../images/home-pic1.png");
+        background-image:url("../images/products/home-pic1.png");
 
+        
+    }
+}
+.ice__name--milkshakes{
+    &::before{
+       content:"";
+        position: absolute;
+        
+        left: 0px;
+        top: -25%;
+        width: 280px;
+        height: 280px;
+        display: block;
+        width:280px;
+        height: 280px;
+        margin-left: auto;
+        margin-right: auto;
+        background-repeat: no-repeat;
+        background-size: contain;
+    
+        
+        background-image:url("../images/products/home-pic1.png");
+    
         
     }
 }
 
 
+
 .ice_text{
-    margin-bottom: 60px;
-    padding-left: 75px;
-    padding-right: 75px;
+    // margin-bottom: 60px;
+    // padding-left: 75px;
+    // padding-right: 75px;
+    // font-weight: 700;
+    // font-size: 16px;
+    // line-height: 176%;
+    // text-align: center;
+    // letter-spacing: 0.04em;
+    padding-left: 39px;
+    padding-right: 41px;
     font-weight: 700;
-    font-size: 16px;
-    line-height: 176%;
+    font-size: 14px;
+    line-height: 152%;
     text-align: center;
     letter-spacing: 0.04em;
-}
 
+    margin-bottom: 32px;
+
+    // @media screen and (min-width: $tablet) {
+    //     margin: -10px;
+    //     display: flex;
+    //   }
+}
 .ice-wrapper{
     display: flex;
     justify-content: center;
     align-items: center;  
 
 }
-
 .ice-wrapper__button{
     display: flex;
     justify-content: center;
