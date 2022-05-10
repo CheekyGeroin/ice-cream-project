@@ -1,11 +1,21 @@
-$mainTextColor:#FFFFFF;
+$mainTextColor: #ffffff;
 $secondTextColor: #000000;
-$mainBackgroundColor:#FFFFFF;
-$heroBackgroundColor:#FFB8CA;
-$secondBackgroundColor:#FFF5F6;
-$mainTitleColor:#D41443;
-$secondTitleColor:#FFA5BA;
-$subtitleTextColor:#907E82;
-$accentButtonColor:#ECEBEB;
-$mainFont:'DM Sans', sans-serif;
-$titleFont:'Titan One', cursive;
+$mainBackgroundColor: #ffffff;
+$heroBackgroundColor: #ffb8ca;
+$secondBackgroundColor: #fff5f6;
+$mainTitleColor: #d41443;
+$secondTitleColor: #ffa5ba;
+$subtitleTextColor: #907e82;
+$accentButtonColor: #ecebeb;
+$accentButtonText: #d41443;
+$accentButtonColor-dark: #c7133e;
+$accentButtonText-dark: #ffffff;
+$contactsPrimaryAccent: #F0D1A5;
+$contactsSecondaryAccent:#C2E297;
+$contactsBorderColor: #E1E1E1;
+$mainFont: 'DM Sans', sans-serif;
+$titleFont: 'Titan One', cursive;
+$menuBackground: #E17992;
+
+// Час та функція трансформації
+$transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
