@@ -1,0 +1,404 @@
+.hero{
+    // max-width: 1600px;
+    position: relative;
+    height: 502px;
+    background-color: rgba(255, 184, 202, 1);
+overflow: hidden;
+       
+@media screen and (min-width: 768px) {
+   height: 416px;
+}
+@media screen and (min-width: 1280px) {
+    height: 664px;
+}
+
+
+}
+.hero-image__cream{
+    position: absolute;
+    left: 117px;
+        top: 92px;
+
+    @media screen and (min-width: 768px) {
+        left: 322px;
+            top: 80px;
+            width: 143px;
+                height: 336px;
+
+                @media screen and (min-width: 1280px) {
+                    width: 236px;
+                        height: 557px;
+                        left: 636px;
+                        top: 108px;
+                    }
+    }
+           
+}
+.elipse{
+    width: 346px;
+        height: 344px;
+    border-radius: 50%;
+    background-color: #FFA5BA;;
+    position: absolute;
+        
+        left: 36px;
+        top: 83px;
+
+        @media screen and (min-width: 768px) {
+            width: 335px;
+                height: 333px;
+                left: 248px;
+                top: 43px;
+            }
+
+                          @media screen and (min-width: 1280px) {
+                            width: 534px;
+                                height: 534px;
+                                left: 517px;
+                                top: 54px;
+                          }
+}
+
+.hero-image__milk{
+@media screen and (max-width:767px) {
+    display: none;
+}
+
+    position: absolute;
+    left: 32px;
+        top: 246px;
+
+                @media screen and (min-width: 1280px) {
+                    width: 213px;
+                        height: 216px;
+                        left: 16px;
+                        top: 388px;
+                }
+}
+
+.hero-image__tasty{
+    @media screen and (max-width:767px) {
+            display: none;
+        }
+
+           position: absolute;
+          
+                   left: 546px;
+                   top: 265px;
+
+                                         @media screen and (min-width: 1280px) {
+                                            width: 304px;
+                                                height: 241px;
+                                                left: 960px;
+                                                top: 424px;
+                                         }
+}
+
+.hero__container {
+    position: relative;
+    
+
+
+    padding-top: 80px;
+    
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+    .hero__container {
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .hero__container {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+}
+
+
+
+
+
+.hero__title{
+    display: flex;
+    flex-direction: column;
+font-family: titan one , sans-serif;
+font-weight: 400;
+font-size: 26px;
+line-height: 1.2;
+letter-spacing: 0.04em;
+text-transform: uppercase;
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    color: #FFF;
+    margin-bottom: 20px;
+
+    @media screen and (min-width:480px) {
+            line-height: 1.15;
+        }
+
+    @media screen and (min-width:768px) {
+            font-size: 22px;
+            line-height: 1.13;
+        }
+                @media screen and (min-width:1280px) {
+                    font-size: 38px;
+                    margin-bottom: 28px;
+                    line-height: 1.16;
+                }
+}
+
+
+
+
+.hero__subtitle{
+    font-size: 48px;
+    line-height: 46px;
+    color: #D41443;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    @media screen and (min-width:768px) {
+            font-size: 34px;
+
+        }
+                @media screen and (min-width:1280px) {
+                    font-size: 58px;
+                }
+}
+.position{
+    
+    position: absolute;
+    left: 20px;
+        top: 194px;
+
+        @media screen and (min-width:768px) {
+                left: 32px;
+                    top: 102px;
+            }
+
+                         @media screen and (min-width:1280px) {
+                            left: 16px;
+                                top: 147px;
+                         }
+}
+
+.hero__list{
+    display: flex;
+}
+.hero__item{
+    &:not(:last-child){
+        margin-right: 8px;
+    }
+}
+
+.hero__button {
+
+
+    font-family: $mainFont;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 1.25;
+    padding: 10px 20px;
+   
+    border-radius: 20px;
+    border: transparent;
+text-align: center;
+    transition: color $transition, background-color $transition;
+
+    &:not(:last-child){
+        margin-right: 8px;
+    }
+
+    @media screen and (min-width:768px) {
+        padding: 8px 12px;
+    }
+         @media screen and (min-width:1280px) {
+font-size: 14px;
+padding: 12px 20px;
+         }
+}
+
+.button--light {
+    color: $mainTitleColor;
+    background-color: $mainBackgroundColor;
+
+    &:hover,
+    &:focus {
+        background-color: $accentButtonColor;
+        color: $accentButtonText;
+    }
+}
+
+.button--dark {
+    color: $mainTextColor;
+    background-color: $mainTitleColor;
+
+    &:hover,
+    &:focus {
+        background-color: $accentButtonColor-dark;
+        color: $accentButtonText-dark;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .hero__numbers {
+        display: none;
+    }
+}
+
+.hero__numbers {
+    margin-right: 16px;
+}
+
+.hero__numbers-item {
+    position: relative;
+    text-align: end;
+}
+
+.hero__numbers-item:not(:last-child) {
+    margin-bottom: 18px;
+}
+
+.hero__numbers-item::before {
+position: absolute;
+    top: -2px;
+    right: -8px;
+    content: "";
+    display: block;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #ffffff;
+
+    @media screen and (min-width:1280px) {
+        position: absolute;
+            top: -5px;
+            right: -15px;
+            content: "";
+            display: block;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-color: #ffffff;
+    }
+    
+}
+
+.block{
+
+@media screen and (min-width: 768px) {
+        position: absolute;
+    left: 693px;
+        top: 92px;
+    }
+
+    @media screen and (min-width: 1280px) {
+       
+                margin-right: 16px;
+            left: 1192px;
+            top: 153px;
+    }
+   
+}
+
+.hero__number {
+position: relative;
+    display: block;
+    font-family: "Titan One";
+    font-size: 28px;
+    line-height: 1.15;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #d41443;
+
+@media screen and (min-width:768px) {
+line-height: 1.14;
+        
+
+    }
+
+    @media screen and (min-width:1280px){
+line-height: 1.15;
+    font-size: 46px;
+  
+    }
+   
+}
+
+.hero__number-text {
+    font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 8px;
+        
+    line-height: 1.25;
+
+    @media screen and (min-width: 1280px) {
+           font-size: 14px;
+        }
+}
+
+
+.box{
+    @media screen and (max-width:767px) {
+        display: none;
+    }
+    position: absolute;
+    left: 184px;
+        top: 287px;
+
+        @media screen and (min-width: 1280px) {
+            width: 200px;
+                height: 78px;
+                left: 229px;
+                top: 456px;
+        }
+}
+
+.box__text{
+font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 1.5;
+    margin-bottom: 7px;
+    color: #FFFFFF;
+    width: 114px;
+        height: 48px;
+        
+        @media screen and (min-width:768px){
+            line-height: 1.4;
+        }
+
+        @media screen and (min-width:1280px) {
+            width: 200px;
+                height: 78px;
+                left: 229px;
+                top: 456px;
+                font-size: 14px;
+                margin-bottom: 20px;
+            }
+}
+
+.box__button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: transparent;
+    width: 18px;
+    height: 18px;
+padding: 0;
+    @media screen and (min-width:1280px) {
+            width: 26px;
+            height: 26px;
+        }
+    }
+
+.box__svg{
+    fill:#D41443;
+}
+   

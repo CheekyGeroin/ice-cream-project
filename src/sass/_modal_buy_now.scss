@@ -25,8 +25,8 @@
 
 .modal-buy__box {
   position: absolute;
-  top: 57vh;
-  left: 50vh;
+  top: 57%;
+  left: 50%;
   transform: translate(-50%, -50%) scale(1);
   width: 95%;
   border-radius: 24px;
@@ -35,11 +35,6 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   transition: transform $transition;
   z-index: 10;
-
-  @media screen and (min-width: $tablet) {
-    top: 57%;
-    left: 50%;
-  }
 
   @media screen and (min-width: $mobile) {
     max-width: 450px;
