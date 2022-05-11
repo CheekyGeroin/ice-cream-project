@@ -136,12 +136,18 @@ text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     color: #FFF;
     margin-bottom: 20px;
 
+    @media screen and (min-width:480px) {
+            line-height: 1.15;
+        }
+
     @media screen and (min-width:768px) {
             font-size: 22px;
+            line-height: 1.13;
         }
                 @media screen and (min-width:1280px) {
                     font-size: 38px;
                     margin-bottom: 28px;
+                    line-height: 1.16;
                 }
 }
 
@@ -163,7 +169,7 @@ text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
                 }
 }
 .position{
-    z-index: 2;
+    
     position: absolute;
     left: 20px;
         top: 194px;
@@ -308,8 +314,14 @@ position: relative;
     text-transform: uppercase;
     color: #d41443;
 
-    @media screen and (min-width:1280px){
+@media screen and (min-width:768px) {
+line-height: 1.14;
+        
 
+    }
+
+    @media screen and (min-width:1280px){
+line-height: 1.15;
     font-size: 46px;
   
     }
@@ -357,6 +369,9 @@ font-family: 'DM Sans';
     width: 114px;
         height: 48px;
         
+        @media screen and (min-width:768px){
+            line-height: 1.4;
+        }
 
         @media screen and (min-width:1280px) {
             width: 200px;
