@@ -124,7 +124,8 @@ margin-bottom: 8px;
     &::before{
         content:"";
         position: absolute;
-        left: 0px;
+        left: 0;
+
         top: -30%;
         width: 100%;
         height: 280px;
@@ -132,6 +133,7 @@ margin-bottom: 8px;
         display: block;
         margin-left: auto;
         margin-right: auto;
+    
         background-repeat: no-repeat;
         background-size: contain;
         background-image:url("../images/products/ice_products-s.png");
@@ -226,6 +228,7 @@ margin-bottom: 8px;
     &::before{
         content:"";
         position: absolute;
+        justify-content: center;
         
         left: 0px;
         top: -30%;
