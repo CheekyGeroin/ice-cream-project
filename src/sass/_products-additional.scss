@@ -23,13 +23,9 @@
 //   transition: 0.3s all;
 // }
 
-/* Стили для модального вікна */
+/* Стилi для модального вікна */
 
 .product-modal {
-  /* Приховується вікно  */
-  // opacity: 0;
-  // visibility: hidden;
-
   /*  Ширина вікна   */
   max-width: 500px;
 
@@ -70,45 +66,57 @@
 // }
 
 /* Стиль для кнопки  */
+
 .product-additional__button {
-  width: 40px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 60px;
-}
-
-.product-additional__button {
   padding: 0;
   width: 40px;
   height: 40px;
   display: inline-block;
   text-decoration: none;
   border: #fff;
-
   color: #fff;
   border-radius: 50%;
 }
 /* Стилі для тексту і заголовків вікна */
 .product-additional__text {
   display: block;
-  font-size: 16px;
   color: $secondTitleColor;
   margin-bottom: 30px;
+  font-size: 14px;
+
+  @media screen and (min-width: $mobile) {
+    font-size: 16px;
+  }
 }
 
 .product-additional__title {
   font-family: $titleFont;
   text-transform: uppercase;
-  font-size: 20px;
+  font-size: 16px;
   color: $mainTitleColor;
   margin-bottom: 30px;
+  padding-top: 10px;
+
+  @media screen and (min-width: $mobile) {
+    font-size: 20px;
+    padding-top: 0;
+  }
 }
+
 .product-additional__image {
+  display: block;
   width: 100%;
   margin: 0 auto;
-  display: flex;
+  display: block;
   max-width: 400px;
-  justify-content: space-around;
+
+  @media screen and (min-width: $mobile) {
+    display: flex;
+    justify-content: space-around;
+  }
 }
 
 .product-additional__icecoffee-first,
@@ -117,6 +125,7 @@
 .product-additional__icecream-second,
 .product-additional__milkshake-first,
 .product-additional__milkshake-second {
+  margin: 0 auto;
   border-radius: 10px;
   overflow: hidden;
   display: block;
@@ -127,5 +136,12 @@
   &:hover,
   &:focus {
     transform: rotate(-360deg) scale(1.5);
+  }
+}
+.product-additional__icecoffee-first,
+.product-additional__icecream-first,
+.product-additional__milkshake-first {
+  @media screen and (max-width: ($mobile - 1px)) {
+    margin-bottom: 20px;
   }
 }
