@@ -159,7 +159,7 @@
     }
 
     @media screen and (min-width: $desktop) {
-        max-width: 165px;
+        max-width: 175px;
         font-size: 16px;
         line-height: 1.87;
         letter-spacing: 0.04em;
@@ -214,6 +214,8 @@
 
 .buttons-list__item {
     margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
 
     @media screen and (min-width: $tablet) {
         margin-bottom: 0;
@@ -227,10 +229,15 @@
 }
 
 .contacts__primary-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     min-width: 160px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.31;
     padding-left: 18px;
     padding-right: 18px;
-    border: none;
 
     @media screen and (min-width: $tablet) {
         min-width: 190px;
