@@ -2,7 +2,7 @@ const refs = {
   openMenuModalBtn: document.querySelector('[data-menu-modal-open]'),
   openHeaderModalBtn: document.querySelector('[data-header-modal-open]'),
   closeModalBtn: document.querySelector('[data-modal-close]'),
-  backdrop: document.querySelector('[data-modal]'),
+  backdrop: document.querySelector('[data-modal-header]'),
 };
 
 refs.openMenuModalBtn.addEventListener('click', toggleModal);
