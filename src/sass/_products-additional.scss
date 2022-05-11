@@ -46,10 +46,28 @@
   color: #fff;
   border-radius: 50%;
 }
+/* додаткові кольори фону для вікон*/
+.product-modal--color-coffee {
+  background-color: $contactsPrimaryAccent;
+}
+
+.product-modal--color-milkshake {
+  background-color: $contactsSecondaryAccent;
+}
 /* Стилі для тексту і заголовків вікна */
 .product-additional__text {
   display: block;
   color: $secondTitleColor;
+  margin-bottom: 30px;
+  font-size: 14px;
+
+  @media screen and (min-width: $mobile) {
+    font-size: 16px;
+  }
+}
+product-additional__text {
+  display: block;
+  color: $mainBackgroundColor;
   margin-bottom: 30px;
   font-size: 14px;
 
