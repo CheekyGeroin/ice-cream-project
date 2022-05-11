@@ -50,7 +50,7 @@
   transition: transform $transition;
 }
 
-/* Стили для активних класів оверлей та вікна  */
+/* Стилi для активних класів оверлей та вікна  */
 
 .modal.active,
 .overlay.active {
@@ -128,68 +128,68 @@ a.product-additional__button {
     transform: rotate(-360deg) scale(1.5);
   }
 }
-/*  блок Андрія*/
-.products {
-  margin-top: 400px;
-  display: flex;
-}
-.products-icecream {
-  text-align: center;
-  width: 395px;
-  height: 535px;
-  background-color: $heroBackgroundColor;
-  border-radius: 24px;
-  position: absolute;
-  &::before {
-    content: url(../images/products-additional/products-image__icecoffee.png);
-    position: relative;
-    width: 395px;
-    height: 395px;
-    background-size: 395px 395px;
-    top: -50%;
-    left: 0;
-  }
-}
-.products-icecoffee {
-  text-align: center;
-  width: 395px;
-  height: 535px;
-  background-color: $heroBackgroundColor;
-  border-radius: 24px;
-  position: absolute;
-  &::before {
-    content: url(../images/products-additional/products-image__icecoffee.png);
-    position: relative;
-    width: 395px;
-    height: 395px;
-    background-size: 395px 395px;
-    top: -50%;
-    left: 0;
-  }
-}
-.products-point {
-  text-align: center;
-  display: inline-block;
-  width: 6px;
-  height: 6px;
-  background-color: #fff;
-  border-radius: 50%;
-  margin-left: 4px;
-}
-.products-point-list {
-  display: flex;
-  justify-content: center;
-  margin-top: 32px;
-}
-.products-title {
-  font-family: $titleFont;
-  text-transform: uppercase;
-  margin-top: -250px;
-}
-.products-text {
-  padding: 0 75px;
-  font-size: 16px;
-  line-height: 1.76;
-  letter-spacing: 0.04em;
-  margin-top: 32px;
-}
+// /*  блок Андрія*/
+// .products {
+//   margin-top: 400px;
+//   display: flex;
+// }
+// .products-icecream {
+//   text-align: center;
+//   width: 395px;
+//   height: 535px;
+//   background-color: $heroBackgroundColor;
+//   border-radius: 24px;
+//   position: absolute;
+//   &::before {
+//     content: url(../images/products-additional/products-image__icecoffee.png);
+//     position: relative;
+//     width: 395px;
+//     height: 395px;
+//     background-size: 395px 395px;
+//     top: -50%;
+//     left: 0;
+//   }
+// }
+// .products-icecoffee {
+//   text-align: center;
+//   width: 395px;
+//   height: 535px;
+//   background-color: $heroBackgroundColor;
+//   border-radius: 24px;
+//   position: absolute;
+//   &::before {
+//     content: url(../images/products-additional/products-image__icecoffee.png);
+//     position: relative;
+//     width: 395px;
+//     height: 395px;
+//     background-size: 395px 395px;
+//     top: -50%;
+//     left: 0;
+//   }
+// }
+// .products-point {
+//   text-align: center;
+//   display: inline-block;
+//   width: 6px;
+//   height: 6px;
+//   background-color: #fff;
+//   border-radius: 50%;
+//   margin-left: 4px;
+// }
+// .products-point-list {
+//   display: flex;
+//   justify-content: center;
+//   margin-top: 32px;
+// }
+// .products-title {
+//   font-family: $titleFont;
+//   text-transform: uppercase;
+//   margin-top: -250px;
+// }
+// .products-text {
+//   padding: 0 75px;
+//   font-size: 16px;
+//   line-height: 1.76;
+//   letter-spacing: 0.04em;
+//   margin-top: 32px;
+// }
