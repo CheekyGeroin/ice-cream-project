@@ -78,11 +78,13 @@
   margin-top: 60px;
 }
 
-a.product-additional__button {
+.product-additional__button {
+  padding: 0;
   width: 40px;
   height: 40px;
   display: inline-block;
   text-decoration: none;
+  border: #fff;
 
   color: #fff;
   border-radius: 50%;

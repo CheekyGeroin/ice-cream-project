@@ -29,9 +29,12 @@
 <!--Перший дів для того, щоб витягнути кнопки з-під героя, потім потрібно прибрати-->
 <div class="test"> 
     <!--Перша кнопка-->
-    <div class="product-additional__button"> <a href="#" class="js-open-modal"
-            data-modal="1"> <img src="images/products-additional/arrow-products.png" alt=""></a>
-        <div class="modal" data-modal="1">
+    
+        <button class="product-additional__button" type="button" product-modal-open>
+            <img src="images/products-additional/arrow-products.png" alt=""></button>
+    <div class="backdrop is-hidden" product-modal>
+    
+        <div class="modal">
             <p class="product-additional__title"> Why do we like ice cream?</p>
             <span class="product-additional__text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                 tempor incididunt ut labore et </span>
@@ -43,7 +46,7 @@
             </div>
     
             <!--   Кнопка для закриття вікна  -->
-            <button class="close-button js-modal-close">
+            <button class="close-button" type="button" product-modal-close>
                 <span class="close-button__icon">X</span> </button>
         </div>
     </div>
