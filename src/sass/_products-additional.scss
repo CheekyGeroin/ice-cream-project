@@ -8,27 +8,27 @@
   width: 100%;
   text-align: center;
 }
-.overlay {
-  /* Приховування оверлея*/
-  opacity: 0;
-  visibility: hidden;
+// .overlay {
+//   /* Приховування оверлея*/
+//   opacity: 0;
+//   visibility: hidden;
 
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.3);
-  z-index: 20;
-  transition: 0.3s all;
-}
+//   position: fixed;
+//   top: 0;
+//   left: 0;
+//   width: 100%;
+//   height: 100%;
+//   background-color: rgba(0, 0, 0, 0.3);
+//   z-index: 20;
+//   transition: 0.3s all;
+// }
 
 /* Стили для модального вікна */
 
-.modal {
+.product-modal {
   /* Приховується вікно  */
-  opacity: 0;
-  visibility: hidden;
+  // opacity: 0;
+  // visibility: hidden;
 
   /*  Ширина вікна   */
   max-width: 500px;
@@ -38,7 +38,6 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 30;
 
   /*  Додаткові стилі для вікна   */
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -52,11 +51,11 @@
 
 /* Стилi для активних класів оверлей та вікна  */
 
-.modal.active,
-.overlay.active {
-  opacity: 1;
-  visibility: visible;
-}
+// .modal.active,
+// .overlay.active {
+//   opacity: 1;
+//   visibility: visible;
+// }
 
 /* Кнопка закриття */
 
@@ -130,68 +129,3 @@
     transform: rotate(-360deg) scale(1.5);
   }
 }
-// /*  блок Андрія*/
-// .products {
-//   margin-top: 400px;
-//   display: flex;
-// }
-// .products-icecream {
-//   text-align: center;
-//   width: 395px;
-//   height: 535px;
-//   background-color: $heroBackgroundColor;
-//   border-radius: 24px;
-//   position: absolute;
-//   &::before {
-//     content: url(../images/products-additional/products-image__icecoffee.png);
-//     position: relative;
-//     width: 395px;
-//     height: 395px;
-//     background-size: 395px 395px;
-//     top: -50%;
-//     left: 0;
-//   }
-// }
-// .products-icecoffee {
-//   text-align: center;
-//   width: 395px;
-//   height: 535px;
-//   background-color: $heroBackgroundColor;
-//   border-radius: 24px;
-//   position: absolute;
-//   &::before {
-//     content: url(../images/products-additional/products-image__icecoffee.png);
-//     position: relative;
-//     width: 395px;
-//     height: 395px;
-//     background-size: 395px 395px;
-//     top: -50%;
-//     left: 0;
-//   }
-// }
-// .products-point {
-//   text-align: center;
-//   display: inline-block;
-//   width: 6px;
-//   height: 6px;
-//   background-color: #fff;
-//   border-radius: 50%;
-//   margin-left: 4px;
-// }
-// .products-point-list {
-//   display: flex;
-//   justify-content: center;
-//   margin-top: 32px;
-// }
-// .products-title {
-//   font-family: $titleFont;
-//   text-transform: uppercase;
-//   margin-top: -250px;
-// }
-// .products-text {
-//   padding: 0 75px;
-//   font-size: 16px;
-//   line-height: 1.76;
-//   letter-spacing: 0.04em;
-//   margin-top: 32px;
-// }

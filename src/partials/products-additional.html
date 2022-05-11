@@ -1,40 +1,14 @@
 
-<!-- <div class="products container">
-    <div class="products-icecream">
-        <h2 class="products-title">ice cream</h2>
-        <div>
-            <span class="products-point"></span>
-            <span class="products-point"></span>
-            <span class="products-point"></span>
-        </div>
-        <p class="products-text" >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
-    
-<div class="product-additional__button"> <a href="#" class="js-open-modal"
-            data-modal="1"> <img src="images/products-additional/arrow-products.png"></a>
-        <div class="modal" data-modal="1">
-            <p class="product-additional__title"> Why do we like ice cream?</p>
-            <span class="product-additional__text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                tempor incididunt ut labore et </span>
-            <div class="product-additional__image ">
-                <img class="product-additional__icecream-first" width="80" height="80"
-                    src="images/products-additional/icecream-additional2.jpeg">
-                <img class="product-additional__icecream-second" width="80" height="80"
-                    src="images/products-additional/icecream-additional3.jpg">
-            </div>
-    
-    </div>
-    <div class="products-icecoffee"></div>
-    <div class="products-milkshake"></div>
-</div> -->
+
 <!--Перший дів для того, щоб витягнути кнопки з-під героя, потім потрібно прибрати-->
 <div class="test"> 
     <!--Перша кнопка-->
     
-        <button class="product-additional__button" type="button" product-modal-open>
+        <button class="button product-additional__button" type="button" product-modal-open>
             <img src="images/products-additional/arrow-products.png" alt=""></button>
-    <div class="backdrop is-hidden"product-modal >
+    <div class="backdrop is-hidden" product-modal>
     
-        <div class="modal" product-modal>
+        <div class="product-modal">
             <p class="product-additional__title"> Why do we like ice cream?</p>
             <span class="product-additional__text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                 tempor incididunt ut labore et </span>
@@ -50,10 +24,11 @@
                 <span class="close-button__icon">X</span> </button>
         </div>
     </div>
-    <!-- Друга кнопка -->
-    <div class="product-additional__button"><a href="#" class="js-open-modal"
-            data-modal="2"><img src="images/products-additional/arrow-products.png" alt=""></a>
-        <div class="modal" data-modal="2">
+<!--кнопка 2-->
+    <button class="button product-additional__button" type="button" product-modal-second-open>
+        <img src="images/products-additional/arrow-products.png" alt=""></button>
+    <div class="backdrop is-hidden" product-modal-second>
+        <div class="product-modal">
             <p class="product-additional__title"> Why do we like ice coffee?</p>
             <span class="product-additional__text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                 tempor incididunt ut labore et </span>
@@ -64,13 +39,69 @@
                     src="images/products-additional/additional-icecoffee2.jpeg" alt="">
             </div>
             <!--   Кнопка для закриття вікна  -->
-            <button class="close-button js-modal-close">
+            <button class="close-button" type="button" product-modal-second-close>
                 <span class="close-button__icon">X</span> </button>
         </div>
     </div>
+
+<!--кнопка 3-->
+<button class="button product-additional__button" type="button" product-modal-third-open>
+    <img src="images/products-additional/arrow-products.png" alt=""></button>
+<div class="backdrop is-hidden" product-modal-third>
+    <div class="product-modal">
+        <p class="product-additional__title"> Why do we like milkshakes?</p>
+        <span class="product-additional__text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+            tempor incididunt ut labore et </span>
+        <div class="product-additional__image ">
+            <img class="product-additional__milkshake-first" width="80" height="80"
+                src="images/products-additional/additional-milkshake1.jpeg" alt="">
+            <img class="product-additional__milkshake-second
+                        " width="80" height="80" src="images/products-additional/additional-milkshake2.jpeg" alt="">
+        </div>
+        <!--   Кнопка для закриття вікна  -->
+        <button class="close-button" type="button" product-modal-third-close>
+            <span class="close-button__icon">X</span> </button>
+    </div>
+</div>
+  <!--проба кнопка 2-->
+    <!-- <div class="product-additional__button"><a href="#" class="js-open-modal"
+                data-modal="2"><img src="images/products-additional/arrow-products.png" alt=""></a>
+            <div class="modal" data-modal="2">
+                <p class="product-additional__title"> Why do we like ice coffee?</p>
+                <span class="product-additional__text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor incididunt ut labore et </span>
+                <div class="product-additional__image ">
+                    <img class="product-additional__icecoffee-first" width="80" height="80"
+                        src="images/products-additional/additional-icecoffee1.jpeg" alt="">
+                    <img class="product-additional__icecoffee-second" width="80" height="80"
+                        src="images/products-additional/additional-icecoffee2.jpeg" alt="">
+                </div> --> -->
+    <!--   Кнопка для закриття вікна  -->
+    <!-- <button class="close-button js-modal-close">
+                    <span class="close-button__icon">X</span> </button>
+            </div>
+        </div> -->
+    <!-- Друга кнопка -->
+    <!-- <div class="product-additional__button"><a href="#" class="js-open-modal"
+            data-modal="2"><img src="images/products-additional/arrow-products.png" alt=""></a>
+        <div class="modal" data-modal="2">
+            <p class="product-additional__title"> Why do we like ice coffee?</p>
+            <span class="product-additional__text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                tempor incididunt ut labore et </span>
+            <div class="product-additional__image ">
+                <img class="product-additional__icecoffee-first" width="80" height="80"
+                    src="images/products-additional/additional-icecoffee1.jpeg" alt="">
+                <img class="product-additional__icecoffee-second" width="80" height="80"
+                    src="images/products-additional/additional-icecoffee2.jpeg" alt="">
+            </div> -->
+            <!--   Кнопка для закриття вікна  -->
+            <!-- <button class="close-button js-modal-close">
+                <span class="close-button__icon">X</span> </button>
+        </div>
+    </div> -->
     
     <!--Третя кнопка-->
-    <div class="product-additional__button">
+    <!-- <div class="product-additional__button">
         <a href="#" class="js-open-modal" data-modal="3"><img
                 src="images/products-additional/arrow-products.png" alt=""></a>
     
@@ -84,15 +115,15 @@
                 <img class="product-additional__milkshake-second
                 " width="80" height="80"
                     src="images/products-additional/additional-milkshake2.jpeg" alt="">
-            </div>
+            </div> -->
             <!--  Кнопка  для закриття вікна  -->
-            <button class="close-button js-modal-close">
+            <!-- <button class="close-button js-modal-close">
                 <span class="close-button__icon">X</span> </button>
     
         </div>
-    </div>
+    </div> -->
     
     
     <!-- Оверлей  -->
-    <div class="overlay js-overlay-modal"></div>
+    <!-- <div class="overlay js-overlay-modal"></div> -->
 </div>
