@@ -15,11 +15,13 @@
     opacity: 1;
 
     @media screen and (min-width: $tablet) {
-        max-width: 700px;
+        width: calc(100% - 260px);
+        height: calc(100vh - 60px);
     }
 
     @media screen and (min-width: $desktop) {
-        max-width: 1000px;
+        width: 1000px;
+        height: calc(100vh - 500px);
     }
 }
 
