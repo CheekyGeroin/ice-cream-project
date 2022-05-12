@@ -2,24 +2,14 @@
   <div class="container header__container">
     <a href="./index.html" class="logo header__logo">
       <picture class="logo__icon">
-        <source
-          srcset="images/logo.webp 1x, images/logo@2x.webp 2x"
-          type="image/webp"
-          srcset="./images/logo.png 1x, ./images/logo@2x.png 2x"
-          type="image/jpeg"
-        />
+        <source srcset="images/logo.webp 1x, images/logo@2x.webp 2x" type="image/webp"
+          srcset="./images/logo.png 1x, ./images/logo@2x.png 2x" type="image/jpeg" />
         <img src="images/logo.png" alt="logo" />
       </picture>
       icecream
     </a>
     <div class="header__menu">
-      <button
-        class="burger"
-        type="button"
-        aria-expanded="false"
-        aria-controls="menu"
-        data-menu-button
-      >
+      <button class="burger" type="button" aria-expanded="false" aria-controls="menu" data-menu-button>
         <svg class="burger__icon burger__icon--open" width="20" height="12">
           <use href="images/icons.svg#burger"></use>
         </svg>
@@ -39,19 +29,19 @@
             </button>
           </li>
           <li class="nav__item">
-            <a href="/index.html" class="nav__link nav__link--current"> Home </a>
+            <a href="#home" class="nav__link nav__link--current scroll__to"> Home </a>
           </li>
           <li class="nav__item">
-            <a href="#howmade" class="nav__link"> About us </a>
+            <a href="#howmade" class="nav__link scroll__to"> About us </a>
           </li>
           <li class="nav__item">
-            <a href="#howmade" class="nav__link"> How it’s made? </a>
+            <a href="#howmade" class="nav__link scroll__to"> How it’s made? </a>
           </li>
           <li class="nav__item">
-            <a href="#products" class="nav__link"> Our products </a>
+            <a href="#products" class="nav__link scroll__to"> Our products </a>
           </li>
-          <li class="nav__item nav__item--contact">
-            <a href="#Contact" class="nav__link"> Contact </a>
+          <li class="nav__item ">
+            <a href="#Contact" class="nav__link scroll__to"> Contact </a>
           </li>
         </ul>
       </nav>

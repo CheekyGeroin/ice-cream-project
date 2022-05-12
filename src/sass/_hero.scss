@@ -19,11 +19,17 @@ overflow: hidden;
     left: 117px;
         top: 92px;
 
+@media screen and (min-width: 480px) and (max-width:767px) {
+        left: 180px;
+        
+    }
+
     @media screen and (min-width: 768px) {
         left: 322px;
             top: 80px;
             width: 143px;
                 height: 336px;
+            }
 
                 @media screen and (min-width: 1280px) {
                     width: 236px;
@@ -31,7 +37,7 @@ overflow: hidden;
                         left: 636px;
                         top: 108px;
                     }
-    }
+    
            
 }
 .elipse{
@@ -43,6 +49,10 @@ overflow: hidden;
         
         left: 36px;
         top: 83px;
+
+@media screen and (min-width: 480px) and (max-width:767px) {
+        left: 100px;
+    }
 
         @media screen and (min-width: 768px) {
             width: 335px;
@@ -96,11 +106,6 @@ overflow: hidden;
 
 .hero__container {
     position: relative;
-    
-
-
-    padding-top: 80px;
-    
     display: flex;
     justify-content: space-between;
 }
@@ -298,7 +303,7 @@ position: absolute;
     @media screen and (min-width: 1280px) {
        
                 margin-right: 16px;
-            left: 1192px;
+            left: 1172px;
             top: 153px;
     }
    
@@ -392,6 +397,13 @@ font-family: 'DM Sans';
     width: 18px;
     height: 18px;
 padding: 0;
+cursor: pointer;
+background-color: $mainBackgroundColor;
+
+&:hover,
+&:focus{
+    background-color: $accentButtonColor;
+}
     @media screen and (min-width:1280px) {
             width: 26px;
             height: 26px;
