@@ -39,12 +39,12 @@
         display: flex;
         justify-content: space-around;
         align-items: center;
-        padding-top: 130px;
+        margin-top: 150px;
     }
 
     @media screen and (min-width: $desktop) {
         display: flex;
-        padding-top: 240px;
+        margin-top: 260px;
 
     }
 
@@ -82,13 +82,17 @@
     }
 
     @media screen and (min-width: $tablet) {
-        padding-top: 85px;
+        padding-top: 115px;
+        padding-left: 30px;
+        padding-right: 30px;
         width: 224px;
     }
     @media screen and (min-width: $desktop) {
-        padding-top: 140px;
+        padding-top: 160px;
         width: 395px;
         margin-right: 32px;
+        padding-left: 77px;
+        padding-right: 77px;
         &:last-child{
         margin-right: 0px;
         }
@@ -166,7 +170,7 @@
         @media screen and (min-width: $desktop) {
             left: 0px;
             top: -50%;
-            width: 100%;
+            width: 394px;
             height: 394px;
             background-image:url("../images/products/ice_products-l.png");
 
@@ -216,7 +220,7 @@
         @media screen and (min-width: $desktop) {
             left: 0px;
             top: -50%;
-            width: 100%;
+            width: 394px;
             height: 394px;
 
             background-image:url("../images/products/coffee_products-l.png");
@@ -290,8 +294,6 @@
 
 .ice__text{
     
-    // padding-left: 39px;
-    // padding-right: 41px;
 
     font-weight: 700;
     font-size: 14px;
@@ -308,8 +310,8 @@
     }
     @media screen and (min-width: $desktop) {
         margin-bottom: 60px;
-        padding-left: 75px;
-        padding-right: 75px;
+        // padding-left: 75px;
+        // padding-right: 75px;
         font-size: 16px;
         line-height: 176%;
     }
