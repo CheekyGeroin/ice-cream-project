@@ -302,14 +302,14 @@
     margin-bottom: 32px;
 
     @media screen and (min-width: $tablet) {
-        padding-left: 32px;
-        padding-right: 32px;
+        // padding-left: 32px;
+        // padding-right: 32px;
         line-height: 1.76;
     }
     @media screen and (min-width: $desktop) {
         margin-bottom: 60px;
-        padding-left: 75px;
-        padding-right: 75px;
+        // padding-left: 75px;
+        // padding-right: 75px;
         font-size: 16px;
         line-height: 176%;
     }
