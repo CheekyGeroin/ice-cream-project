@@ -26,11 +26,7 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   text-align: center;
   padding: 30px;
-<<<<<<< Updated upstream
   border-radius: 24px;
-=======
-  border-radius: 10px;
->>>>>>> Stashed changes
   background-color: $heroBackgroundColor;
   transition: transform $transition;
 }
@@ -61,21 +57,7 @@
 /* Стилі для тексту і заголовків вікна */
 .product-additional__text {
   display: block;
-<<<<<<< Updated upstream
   color: $mainTextColor;
-=======
-  color: $mainBackgroundColor;
-  margin-bottom: 30px;
-  font-size: 14px;
-
-  @media screen and (min-width: $mobile) {
-    font-size: 16px;
-  }
-}
-product-additional__text {
-  display: block;
-  color: $mainBackgroundColor;
->>>>>>> Stashed changes
   margin-bottom: 30px;
   font-size: 14px;
 
@@ -87,13 +69,8 @@ product-additional__text {
 .product-additional__title {
   font-family: $titleFont;
   text-transform: uppercase;
-<<<<<<< Updated upstream
   font-size: 18px;
   color: $mainTextColor;
-=======
-  font-size: 16px;
-  color: $mainBackgroundColor;
->>>>>>> Stashed changes
   margin-bottom: 30px;
   padding-top: 10px;
   letter-spacing: 0.04em;
