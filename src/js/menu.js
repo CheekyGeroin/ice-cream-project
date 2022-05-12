@@ -31,7 +31,7 @@ document.addEventListener('click', function (e) {
 let hashTagActive = '';
 
 $(document).ready(function () {
-  $('.nav__link').click(function (event) {
+  $('.scroll__to').click(function (event) {
     if (hashTagActive != this.hash) {
       event.preventDefault();
       let dest = 0;
@@ -44,11 +44,11 @@ $(document).ready(function () {
         {
           scrollTop: dest,
         },
-        2000,
+        1500,
         'swing',
       );
-      hashTagActive = this.hash;
-      console.log(hashTagActive);
+      // hashTagActive = this.hash;
+      // console.log(hashTagActive);
       toggleMenu();
     }
   });
