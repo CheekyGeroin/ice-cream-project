@@ -98,8 +98,7 @@
     line-height: 1.62;
     color: $subtitleTextColor;
 
-    & + & {
-        margin-top: 20px;
+    &:first-child {
         margin-bottom: 20px;
 
         @media screen and (min-width: $tablet) {
@@ -107,8 +106,12 @@
         }
 
         @media screen and (min-width: $desktop) {
-            margin-top: 30px;
-            margin-bottom: 40px;
+            margin-bottom: 30px;
+        }
+    }
+
+    & + & {
+        @media screen and (min-width: $desktop) {
             font-size: 14px;
             line-height: 1.94;
         }
@@ -133,6 +136,22 @@
     &--red {
         color: $secondTitleColor;
     }
+
+    &--margin-1 {
+        margin-bottom: 20px;
+
+        @media screen and (min-width: $desktop) {
+            margin-bottom: 40px;
+        }
+    }
+
+    &--margin-2 {
+        margin-bottom: 20px;
+
+        @media screen and (min-width: $tablet) {
+            margin-bottom: 40px;
+        }
+    }
 }
 
 .about__span {
@@ -155,4 +174,3 @@
     margin-left: 14px;
     fill: transparent;
 }
-
