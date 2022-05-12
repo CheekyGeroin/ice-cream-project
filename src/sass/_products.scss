@@ -9,16 +9,16 @@
         padding-bottom: 60px;
     }
 }
-.section-wrapper{
-margin-bottom: 8px;
+// .section-wrapper{
+// margin-bottom: 8px;
 
-@media screen and (min-width: $tablet) {
-    margin-bottom: 16px;
-}
-@media screen and (min-width: $desktop) {
-    margin-bottom: 0;
-}
-}
+// @media screen and (min-width: $tablet) {
+//     margin-bottom: 16px;
+// }
+// @media screen and (min-width: $desktop) {
+//     margin-bottom: 0;
+// }
+// }
 .section__label--products{
     @media screen and (min-width: $tablet) {
         margin-bottom: 18px;
@@ -29,32 +29,36 @@ margin-bottom: 8px;
 }
 
 
-.ice{
+.ice {
     @media screen and (max-width: 767px) {
         display: block;
-    padding-top: 148px;
-      }
-      @media screen and (min-width: $tablet) and (max-width: 1279px){
+        margin-top: 148px;
+    }
+
+    @media screen and (min-width: $tablet) and (max-width: 1279px) {
         display: flex;
         justify-content: space-around;
         align-items: center;
         padding-top: 130px;
-      }
+    }
 
-      @media screen and (min-width: $desktop) {
+    @media screen and (min-width: $desktop) {
         display: flex;
         padding-top: 240px;
 
-      }
+    }
 
-      
+
 }
 .ice__item{
     position: relative;
 
     
-    padding-top: 140px;
+    padding-top: 160px;
+    padding-left: 40px;
+    padding-right: 40px;
     padding-bottom: 60px;
+
 
     width: 280px;
     background-color: #FFB8CA;
@@ -69,7 +73,7 @@ margin-bottom: 8px;
     }
 
     @media screen and (max-width: 767px) {
-        margin-bottom: 140px;
+        margin-bottom: 145px;
         margin-left: auto;
         margin-right: auto;
         &:last-child{
@@ -91,7 +95,6 @@ margin-bottom: 8px;
     }
 }
 .ice__name {
-    margin-top: 20px;
     margin-bottom: 32px;
 
     font-family: $titleFont;
@@ -152,7 +155,7 @@ margin-bottom: 8px;
         @media screen and (min-width: $tablet) {
             left: 0px;
             top: -30%;
-            width: 394px;
+            width: 224px;
             height: 224px;
             background-image:url("../images/products/ice_products-m.png");
 
@@ -287,8 +290,8 @@ margin-bottom: 8px;
 
 .ice__text{
     
-    padding-left: 39px;
-    padding-right: 41px;
+    // padding-left: 39px;
+    // padding-right: 41px;
 
     font-weight: 700;
     font-size: 14px;
