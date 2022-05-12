@@ -7,6 +7,7 @@
   padding-bottom: 12px;
   border-radius: 22px;
   border-color: transparent;
+  cursor: pointer;
 
   transition: color $transition, background-color $transition;
 }
@@ -31,8 +32,4 @@
     background-color: $accentButtonColor-dark;
     color: $accentButtonText-dark;
   }
-}
-
-button {
-  cursor: pointer;
 }

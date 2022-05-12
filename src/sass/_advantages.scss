@@ -1,13 +1,11 @@
 .advantage {
-  @media screen and (max-width: 430px) {
-    padding-right: 60px;
-  }
+  padding-right: 60px;
 
   @media screen and (min-width: $tablet) {
     display: flex;
     padding-right: 200px;
   }
-  @media screen and (min-width: $tablet) and (max-width: ($desktop - 1px)) {
+  @media screen and (min-width: $tablet) and (max-width: $desktop - 1px) {
     padding-left: 16px;
   }
 
@@ -22,7 +20,7 @@
   }
 }
 .advantage__item:not(:last-child) {
-  @media screen and (max-width: ($tablet - 1px)) {
+  @media screen and (max-width: $tablet - 1px) {
     margin-bottom: 30px;
   }
 
@@ -118,11 +116,5 @@
     font-size: 16px;
     line-height: 1.76;
     letter-spacing: 0.02em;
-  }
-}
-
-.section__advantage {
-  @media screen and (min-width: $tablet) and (max-width: ($desktop - 1px)) {
-    padding-top: 40px;
   }
 }

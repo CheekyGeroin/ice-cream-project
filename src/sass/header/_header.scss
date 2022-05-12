@@ -12,9 +12,7 @@
     align-items: center;
     
     justify-content: space-between;
-    @media screen and (min-width: 768px) and (max-width: 1279px) {
-      padding-left: 32px;
-      padding-right: 32px;
+    @media screen and (max-width: 1279px) {
     }
   }
   
@@ -22,31 +20,10 @@
     padding-top: 32px;
   }
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: 768px) {
     padding-top: 37px;
-    padding-left: 0;
-    padding-right: 0;
   }
   
-}
-
-.logo {
-  display: flex;
-  align-items: center;
-  font-family: $titleFont;
-  font-size: 25px;
-  color: $mainTitleColor;
-  text-transform: uppercase;
-  
-  img{
-    width: 100%;
-  }
-
-  .logo__icon{
-    width: 50px;
-    height: 50px;
-    margin-right: 18px;
-  }
 }
 
 .header__menu{

@@ -21,6 +21,12 @@
     border-bottom: 1px solid #E18298;
   }
 
+  &--contact{
+    @media screen and (min-width: 1280px) {
+      display: none;
+    }
+  }
+
   &--modal-btn {
     padding-bottom: 19px;
     display: flex;

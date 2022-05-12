@@ -1,3 +1,4 @@
+// Фон
 .backdrop {
   position: fixed;
   top: 0;
@@ -34,11 +35,17 @@
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   transition: transform $transition;
-  z-index: 10;
 
   @media screen and (min-width: $mobile) {
     max-width: 450px;
   }
+}
+.modal-buy__thumb {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-40%, -45%);
+  z-index: -1;
 }
 
 .modal-buy__wrapper {
@@ -54,6 +61,9 @@
   color: $mainTitleColor;
   overflow-y: auto;
 
+  @media screen and (max-width: 380px) {
+    padding-top: 50px;
+  }
   @media screen and (min-width: $mobile) {
     font-size: 14px;
   }
@@ -74,24 +84,6 @@
 
   @media screen and (min-width: $mobile) {
     font-size: 24px;
-  }
-}
-
-.modal-buy__wrapper::before {
-  content: '';
-  position: absolute;
-  display: block;
-  top: 0;
-  left: 50%;
-  width: 150px;
-  height: 150px;
-  transform: translate(-40%, -45%);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-image: url(../images/modal_buy/icecream.png);
-
-  @media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-    background-image: url(../images/modal_buy/icecream@2x.png);
   }
 }
 
@@ -164,67 +156,7 @@
     color: rgba(117, 117, 117, 0.5);
   }
 }
-// Checkbox
-.checkbox-buy {
-  text-align: center;
-  margin: 15px auto;
-}
 
-.checkbox-buy__title {
-  margin-bottom: 12px;
-  font-family: $titleFont;
-  font-weight: 200;
-  font-size: 12px;
-  line-height: 1.14;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: $mainTitleColor;
-
-  @media screen and (min-width: $mobile) {
-    font-size: 14px;
-  }
-}
-
-.checkbox-buy__set {
-  width: 100%;
-  text-align: center;
-}
-
-.checkbox-buy_label {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  margin-right: 8px;
-  cursor: pointer;
-}
-
-//  кастомные чекбоксы
-.checkbox-buy__icon {
-  margin-right: 4px;
-  width: 15px;
-  height: 15px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  border-radius: 50%;
-  transition: box-shadow $transition, background-color $transition;
-
-  .checkbox-buy__input:focus + & {
-    box-shadow: 0 0 0 2px $mainTitleColor;
-  }
-
-  .checkbox-buy__input:checked:focus + & {
-    box-shadow: 0 0 0 2px $accentButtonText;
-  }
-
-  .checkbox-buy__input:checked + & {
-    border-color: $mainTitleColor;
-    background-color: $mainTitleColor;
-    background-image: url(../images/modal_buy/icon-checked.svg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-origin: border-box;
-  }
-}
-// rjytw
 .form-buy__comment {
   margin-bottom: 0;
 }
