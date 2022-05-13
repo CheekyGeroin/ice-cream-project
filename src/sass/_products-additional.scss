@@ -121,6 +121,13 @@
 }
 
 /* кольори кнопок в вікнах*/
+.close-button__icon--icecream {
+  color: $mainTextColor;
+  &:hover,
+  &:focus {
+    color: $secondTitleColor;
+  }
+}
 .close-button__icon--icecoffee {
   color: $mainTextColor;
   &:hover,
