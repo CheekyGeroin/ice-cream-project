@@ -2,7 +2,7 @@
     background-image: linear-gradient($mainBackgroundColor 23%, $secondBackgroundColor 23%);
 
     @media screen and (max-width: $tablet - 1px) {
-        padding-top: 8px;
+        padding-top: 0;
     }
 }
 
@@ -34,6 +34,12 @@
 
     &:last-child {
         margin-bottom: 0;
+    }
+
+    @media screen and (max-width: $tablet - 1px) {
+        max-width: 280px;
+        margin-right: auto;
+        margin-left: auto;
     }
 
     @media screen and (min-width: $tablet) {
