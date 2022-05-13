@@ -27,3 +27,29 @@ document.addEventListener('click', function (e) {
     toggleMenu();
   }
 });
+
+let hashTagActive = '';
+
+$(document).ready(function () {
+  $('.scroll__to').click(function (event) {
+    if (hashTagActive != this.hash) {
+      event.preventDefault();
+      let dest = 0;
+      if ($(this.hash).offset().top > $(document).height() - $(window).height()) {
+        dest = $(document).height() - $(window).height();
+      } else {
+        dest = $(this.hash).offset().top;
+      }
+      $('html,body').animate(
+        {
+          scrollTop: dest,
+        },
+        1500,
+        'swing',
+      );
+      // hashTagActive = this.hash;
+      // console.log(hashTagActive);
+      toggleMenu();
+    }
+  });
+});
