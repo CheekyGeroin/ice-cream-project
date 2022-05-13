@@ -9,16 +9,7 @@
         padding-bottom: 60px;
     }
 }
-.section-wrapper{
-margin-bottom: 8px;
 
-@media screen and (min-width: $tablet) {
-    margin-bottom: 16px;
-}
-@media screen and (min-width: $desktop) {
-    margin-bottom: 0;
-}
-}
 .section__label--products{
     @media screen and (min-width: $tablet) {
         margin-bottom: 18px;
@@ -29,32 +20,36 @@ margin-bottom: 8px;
 }
 
 
-.ice{
+.ice {
     @media screen and (max-width: 767px) {
         display: block;
-    padding-top: 148px;
-      }
-      @media screen and (min-width: $tablet) and (max-width: 1279px){
+        margin-top: 148px;
+    }
+
+    @media screen and (min-width: $tablet) and (max-width: 1279px) {
         display: flex;
         justify-content: space-around;
         align-items: center;
-        padding-top: 130px;
-      }
+        margin-top: 150px;
+    }
 
-      @media screen and (min-width: $desktop) {
+    @media screen and (min-width: $desktop) {
         display: flex;
-        padding-top: 240px;
+        margin-top: 260px;
 
-      }
+    }
 
-      
+
 }
 .ice__item{
     position: relative;
 
     
-    padding-top: 140px;
+    padding-top: 160px;
+    padding-left: 40px;
+    padding-right: 40px;
     padding-bottom: 60px;
+
 
     width: 280px;
     background-color: #FFB8CA;
@@ -69,7 +64,7 @@ margin-bottom: 8px;
     }
 
     @media screen and (max-width: 767px) {
-        margin-bottom: 140px;
+        margin-bottom: 145px;
         margin-left: auto;
         margin-right: auto;
         &:last-child{
@@ -78,20 +73,23 @@ margin-bottom: 8px;
     }
 
     @media screen and (min-width: $tablet) {
-        padding-top: 85px;
+        padding-top: 115px;
+        padding-left: 30px;
+        padding-right: 30px;
         width: 224px;
     }
     @media screen and (min-width: $desktop) {
-        padding-top: 140px;
+        padding-top: 160px;
         width: 395px;
         margin-right: 32px;
+        padding-left: 77px;
+        padding-right: 77px;
         &:last-child{
         margin-right: 0px;
         }
     }
 }
 .ice__name {
-    margin-top: 20px;
     margin-bottom: 32px;
 
     font-family: $titleFont;
@@ -152,7 +150,7 @@ margin-bottom: 8px;
         @media screen and (min-width: $tablet) {
             left: 0px;
             top: -30%;
-            width: 394px;
+            width: 224px;
             height: 224px;
             background-image:url("../images/products/ice_products-m.png");
 
@@ -163,7 +161,7 @@ margin-bottom: 8px;
         @media screen and (min-width: $desktop) {
             left: 0px;
             top: -50%;
-            width: 100%;
+            width: 394px;
             height: 394px;
             background-image:url("../images/products/ice_products-l.png");
 
@@ -213,7 +211,7 @@ margin-bottom: 8px;
         @media screen and (min-width: $desktop) {
             left: 0px;
             top: -50%;
-            width: 100%;
+            width: 394px;
             height: 394px;
 
             background-image:url("../images/products/coffee_products-l.png");
@@ -287,8 +285,6 @@ margin-bottom: 8px;
 
 .ice__text{
     
-    padding-left: 39px;
-    padding-right: 41px;
 
     font-weight: 700;
     font-size: 14px;
@@ -299,14 +295,14 @@ margin-bottom: 8px;
     margin-bottom: 32px;
 
     @media screen and (min-width: $tablet) {
-        padding-left: 32px;
-        padding-right: 32px;
+        // padding-left: 32px;
+        // padding-right: 32px;
         line-height: 1.76;
     }
     @media screen and (min-width: $desktop) {
         margin-bottom: 60px;
-        padding-left: 75px;
-        padding-right: 75px;
+        // padding-left: 75px;
+        // padding-right: 75px;
         font-size: 16px;
         line-height: 176%;
     }
