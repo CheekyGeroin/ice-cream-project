@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <<<<<<< Updated upstream
   
     
@@ -72,6 +73,8 @@
     
     .box6 {
 =======
+=======
+>>>>>>> main
 .section__gallery {
   background: linear-gradient(
     $secondBackgroundColor 0%,
@@ -109,11 +112,18 @@
   justify-content: start;
   align-items: center;
   gap: 3px;
+<<<<<<< HEAD
   align-self: center;
 }
 
 .box1 {
   margin-top: 25px;
+=======
+}
+
+.box1 {
+  margin-top: 30px;
+>>>>>>> main
 }
 
 .box2 {
@@ -129,7 +139,11 @@
 }
 
 .box6 {
+<<<<<<< HEAD
   margin-top: 25px;
+=======
+  margin-top: 30px;
+>>>>>>> main
 }
 
 .gallery__image {
@@ -140,7 +154,11 @@
 }
 
 .small-image {
+<<<<<<< HEAD
   max-width: 50%;
+=======
+  width: 40px;
+>>>>>>> main
 }
 
 .gallery__image {
@@ -148,13 +166,19 @@
 }
 
 .gallery__image:hover {
+<<<<<<< HEAD
   cursor: pointer;
+=======
+>>>>>>> main
   transform: scale(1.2);
   z-index: 1;
 }
 
 .gallery__item {
+<<<<<<< HEAD
   
+=======
+>>>>>>> main
   width: fit-content;
   -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -166,7 +190,10 @@
 .gallery__item:hover {
   -webkit-transform: rotate(1turn) scale(1.1);
   transform: rotate(1turn) scale(1.1);
+<<<<<<< HEAD
   
+=======
+>>>>>>> main
 }
 
 @media (min-width: 400px) and (max-width: 767px) {
@@ -179,7 +206,11 @@
   }
 
   .box1 {
+<<<<<<< HEAD
     margin-top: 40px;
+=======
+    margin-top: 50px;
+>>>>>>> main
   }
 
   .box2 {
@@ -187,89 +218,16 @@
   }
 
   .box4 {
+<<<<<<< HEAD
 >>>>>>> Stashed changes
+=======
+>>>>>>> main
     margin-top: 30px;
-    }
-    
-    
-    .gallery__image {
-        max-width: 100%;
-        object-fit: cover;
-        border-radius: 10px;
-        vertical-align: middle;
-    }
-    
-    .small-image {
-        max-width: 50%;
-    }
-   
-      
-      .gallery__image {
-        transition: transform 500ms;
-      }
-      
-      .gallery__image:hover  {
-        transform: scale(1.2);
-        z-index: 1;
-      }
+  }
 
-  
-    
-    
-      .gallery__item {
-          
-        
-        -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-        transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-        transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-        transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-      }
-      
-      .gallery__item:hover {
-        -webkit-transform: rotate(1turn) scale(1.1);
-                transform: rotate(1turn) scale(1.1);
-      }
-    
-    @media (min-width: 400px ) and (max-width:767px) {
-    
-        .grid__list {
-            gap: 3px;
-        }
-    
-    .child__grid {
-        gap: 3px;
-        
-    }
-    
-        .box1 {
-            margin-top: 30px;
-        }
-        
-        .box2 {
-            margin-top: 25px;
-        }
-        
-        .box4 {
-            margin-top: 40px;
-        }
-        
-        
-        .box5 {
-            margin-top: 15px;
-        }
-        
-        .box6 {
-        margin-top: 30px;
-        }
-
-
-       
-        
-    }
-    
-    
-    
-    @media (min-width: 768px ) and (max-width: 1279px) {
+  .box5 {
+    margin-top: 15px;
+  }
 
   .box6 {
     margin-top: 40px;
@@ -277,93 +235,39 @@
 
 <<<<<<< Updated upstream
   .small-image {
-    width: 50%
+    width: 61px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1279px) {
+  .gallery-masonry {
+    padding-left: 74px;
+    padding-right: 74px;
   }
 
+  .grid__list {
+    gap: 4px;
+  }
 
-        .grid__list {
-            gap: 4px;
-        }
-    
-        .child__grid {
-            gap: 4px;
-            
-        }
+  .child__grid {
+    gap: 4px;
+  }
 
-    
-        .gallery__image {
-            border-radius: 20px;
-        }
-        
-    
-        .box1 {
-            margin-top: 60px;
-        }
-        
-        .box2 {
-            margin-top: 50px;
-        }
-        
-        .box4 {
-            margin-top: 70px;
-        }
-        
-        
-        .box5 {
-            margin-top: 30px;
-        }
-        
-        .box6 {
-        margin-top: 60px;
-        }
+  .gallery__image {
+    border-radius: 20px;
+  }
 
-        .small-image {
-            max-width: 50%;
-        }
+  .box1 {
+    margin-top: 100px;
+  }
 
-       
-    }
-    
-    @media (min-width: 1280px ) {
+  .box2 {
+    margin-top: 50px;
+  }
 
-        .gallery-masonry {
-            padding-left: 123px;
-            padding-right: 123px;
-        }
-        .grid__list {
-            gap: 6px;
-        }
-        .child__grid {
-            gap: 6px;
-           
-        }
-        
-        .gallery__image {
-            border-radius: 20px;
-        }
-        
-
-
-    
-    .box1 {
-        margin-top: 60px;
-    }
-    
-    .box2 {
-        margin-top: 50px;
-    }
-    
-    .box4 {
-        margin-top: 70px;
-    }
-    
-    
-    .box5 {
-        margin-top: 30px;
-    }
-    
-    .box6 {
+  .box4 {
     margin-top: 60px;
+<<<<<<< HEAD
     }
     
     .small-image {
@@ -432,6 +336,8 @@
 
   .box4 {
     margin-top: 60px;
+=======
+>>>>>>> main
   }
 
   .box5 {
@@ -439,10 +345,19 @@
   }
 
   .box6 {
+<<<<<<< HEAD
     margin-top: 70px;
   }
 
 
+=======
+    margin-top: 100px;
+  }
+
+  .small-image {
+    width: 85px;
+  }
+>>>>>>> main
 }
 
 @media (min-width: 1280px) {
@@ -462,7 +377,11 @@
   }
 
   .box1 {
+<<<<<<< HEAD
     margin-top: 60px;
+=======
+    margin-top: 100px;
+>>>>>>> main
   }
 
   .box2 {
@@ -470,7 +389,11 @@
   }
 
   .box4 {
+<<<<<<< HEAD
     margin-top: 80px;
+=======
+    margin-top: 60px;
+>>>>>>> main
   }
 
   .box5 {
@@ -478,10 +401,19 @@
   }
 
   .box6 {
+<<<<<<< HEAD
     margin-top: 60px;
   }
 
  
+=======
+    margin-top: 100px;
+  }
+
+  .small-image {
+    width: 143px;
+  }
+>>>>>>> main
 }
 
 .fade {
@@ -508,4 +440,7 @@
     opacity: 1;
   }
 }
+<<<<<<< HEAD
 >>>>>>> Stashed changes
+=======
+>>>>>>> main

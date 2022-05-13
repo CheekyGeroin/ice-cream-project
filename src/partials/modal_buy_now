@@ -4,6 +4,21 @@
       <span class="close-button__icon">X</span>
     </button>
     <div class="modal-buy__wrapper">
+      <div class="modal-buy__thumb">
+        <picture>
+          <source
+            media="(min-width: 768px)"
+            srcset="images/modal_buy/icecream.webp 1x, images/modal_buy/icecream@2x.webp 2x"
+            type="image/webp"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="images/modal_buy/icecream.png 1x, images/modal_buy/icecream@2x.png 2x"
+            type="image/png"
+          />
+          <img src="images/modal_buy/icecream.png" alt="icecream" width="250" height="249" />
+        </picture>
+      </div>
       <b class="modal-buy__title"
         >Leave your contacts,<br />
         we will call you back</b
@@ -33,41 +48,6 @@
               placeholder="+38 (012) 345 - 67- 98"
               required
             />
-          </div>
-        </div>
-        <div class="checkbox-buy">
-          <p class="checkbox-buy__title">What would you like to order?</p>
-          <div class="checkbox-buy__set">
-            <label class="checkbox-buy_label">
-              <input
-                class="checkbox-buy__input visually-hidden"
-                type="checkbox"
-                name="product"
-                value="Ice cream"
-              />
-              <span class="checkbox-buy__icon"></span>
-              Ice cream
-            </label>
-            <label class="checkbox-buy_label">
-              <input
-                class="checkbox-buy__input visually-hidden"
-                type="checkbox"
-                name="product"
-                value="Ice coffee"
-              />
-              <span class="checkbox-buy__icon"></span>
-              Ice coffee
-            </label>
-            <label class="checkbox-buy_label">
-              <input
-                class="checkbox-buy__input visually-hidden"
-                type="checkbox"
-                name="product"
-                value="Milkshake"
-              />
-              <span class="checkbox-buy__icon"></span>
-              Milkshake
-            </label>
           </div>
         </div>
         <div class="form-buy__comment">

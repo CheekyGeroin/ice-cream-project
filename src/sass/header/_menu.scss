@@ -16,7 +16,8 @@
 
     opacity: 0;
     overflow: hidden;
-    transform: scale3d(1, 1, 0) ;
+    transform: translateX(100%);
+
     transition: color $transition,
     transform $transition,
     opacity $transition,
@@ -36,7 +37,7 @@
     }
 
     &.is-open {
-      transform:  scale3d(1, 1, 1);
+      transform: translateX(0);
       opacity: 1;
       overflow: visible;
     }
